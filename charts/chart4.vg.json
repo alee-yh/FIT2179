@@ -1,0 +1,44 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Where Do Malaysians Earn the Most?",
+        "subtitle": "Median household income by state, 2024",
+        "fontSize": 16,
+        "subtitleFontSize": 12,
+        "anchor": "start"
+    },
+    "width": 600,
+    "height": 400,
+    "data": {
+        "url": "data/states.geojson",
+        "format":{"type": "json", "property": "features"}
+    },
+    "transform": [
+        {
+            "lookup": "properties.Name",
+            "from":{
+                "data": {
+                    "url": "data/hies_state_percentile.csv",
+                    "format": {"type": "csv"}
+                },
+                "key": "state",
+                "fields": ["income"],
+                "filter": "datum.date == '2024-01-01' && datum.percentile == '50' && datum.variable == 'median'"
+            }
+        }
+    ],
+    "projection": {"type": "mercator"},
+    "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.5},
+    "encoding": {
+        "color": {
+            "field": "income",
+            "type": "quantitative",
+            "scale": {"scheme": "yellowgreen"},
+            "title": "Median Income (RM)"
+        },
+        "tooltip": [
+            {"field": "properties.Name", "title": "State"},
+            {"field": "income", "title": "Median Income (RM)", "format": ",.0f"}
+        ]
+    }
+}
