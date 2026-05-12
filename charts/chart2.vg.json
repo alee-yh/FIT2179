@@ -1,25 +1,48 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Happiness Index by State, 2024",
+    "title": {
+        "text": "Happiness Across Every Life Domain by State",
+        "subtitle": "Each cell shows a state's happiness score for that domain. Darker = higher score.",
+        "fontSize": 16,
+        "subtitleFontSize": 12,
+        "anchor": "start"
+    },
     "width": 500,
-    "height": 300,
+    "height": 350,
     "data": {
-        "url": "../data/happiness_state.csv",
+        "url": "data/happiness_components.csv",
         "format": {"type": "csv"}
     },
-    "mark":"bar",
+    "transform": [
+        {
+            "fold": ["family", "housing", "social", "health", "communication", "education", "work", "income_happiness", "safety", "time_use", "culture", "religion", "emotional"],
+            "as": ["domain", "score"]
+        }
+    ],
+    "mark": "rect",
     "encoding": {
         "y":{
-            "field": "state",
+            "field":"state",
             "type": "nominal",
-            "sort": "-x",
-            "title": "State"
+            "title": null,
+            "sort": "-x"
         },
         "x":{
-            "field": "happiness",
+            "field":"domain",
+            "type": "nominal",
+            "title": null,
+            "sort": "-x"
+        },
+        "color":{
+            "field":"score",
             "type": "quantitative",
-            "title": "Happiness Index",
-            "scale": {"domain": [6.5, 9]}
-        }
+            "scale":{"scheme": "blues"},
+            "title": "Score"
+        },
+        "tooltip": [
+            {"field": "state", "title": "State"},
+            {"field": "domain", "title": "Domain"},
+            {"field": "score", "title": "Score", "format": ".2f"}
+        ]
     }
 }
