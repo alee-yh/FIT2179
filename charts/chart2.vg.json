@@ -1,0 +1,25 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Happiness Index by State, 2024",
+    "width": 500,
+    "height": 300,
+    "data": {
+        "url": "../data/happiness_state.csv",
+        "format": {"type": "csv"}
+    },
+    "mark":"bar",
+    "encoding": {
+        "y":{
+            "field": "state",
+            "type": "nominal",
+            "sort": "-x",
+            "title": "State"
+        },
+        "x":{
+            "field": "happiness",
+            "type": "quantitative",
+            "title": "Happiness Index",
+            "scale": {"domain": [6.5, 9]}
+        }
+    }
+}

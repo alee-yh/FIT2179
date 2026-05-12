@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "How Happy Are Malaysians?",
+    "subtitle": "Malaysia Happiness Index scores across 13 life domains, 2024",
+    "fontSize": 16,
+    "subtitleFontSize": 12,
+    "anchor": "start"
+  },
+  "width": 600,
+  "height": 350,
+  "data": {
+    "url": "data/happiness_national.csv",
+    "format": {"type": "csv"}
+  },
+  "layer": [
+    {
+        "mark": {"type": "rule", "strokeWidth": 1.5, "color": "#cccccc"},
+        "encoding": {
+            "y": {"field": "component", "type": "nominal", "sort": "x"},
+            "x": {"field": "score", "type": "quantitative"},
+            "x2":{"value": 0}
+        }
+    },
+    {
+        "mark": {"type": "point", "filled": true, "size": 120},
+        "encoding": {
+            "y":{
+                "field": "component",
+                "type": "nominal",
+                "sort": "x",
+                "title": null
+            },
+            "x":{
+                "field": "score",
+                "type": "quantitative",
+                "title": "Happiness Score (scale: 0-10)",
+                "scale": {"domain": [5.5, 9.5]}
+            },
+            "color":{
+                "condition":{
+                    "test": "datum.score < 7.6",
+                    "value": "#e45756"
+                },
+                "value": "#4c78a8"
+            },
+            "tooltip": [
+                {"field": "component", "title": "Domain"},
+                {"field": "score", "title": "Score", "format": ".2f"}
+            ]
+        }
+    },
+    {
+        "mark":{
+            "type": "rule",
+            "strokeDash": [4, 4],
+            "color": "#333333",
+            "strokeWidth": 1.2
+        },
+        "encoding": {
+            "x": {"datum": 7.6}
+        }
+    },
+    {
+        "mark": {
+            "type": "text",
+            "align":"left",
+            "dx": 4,
+            "dy": -108,
+            "fontSize": 10,
+            "color": "#333333",
+            "text": "National Average: 7.6"
+        },
+        "encoding": {
+            "x": {"datum": 7.6}
+        }
+    }
+  ]
+}
