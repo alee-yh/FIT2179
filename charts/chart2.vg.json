@@ -1,5 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": "transparent",
     "title": {
         "text": "Happiness Across Every Life Domain by State",
         "subtitle": "Each cell shows a state's happiness score for that domain. Darker = higher score.",
@@ -15,8 +16,19 @@
     },
     "transform": [
         {
-            "fold": ["family", "housing", "social", "health", "communication", "education", "work", "income_happiness", "safety", "time_use", "culture", "religion", "emotional"],
-            "as": ["domain", "score"]
+            "fold": [
+                "family", "housing", "social", "health", "communication", 
+                "education", "work", "income_happiness", "safety", 
+                "time_use", "culture", "religion", "emotional"],
+            "as": ["domain_key", "score"]
+        },
+        {
+            "calculate": "{'family': 'Family', 'housing': 'Housing and Environment', 'social': 'Social Participation', 'health': 'Health', 'communication': 'Communication Facilities', 'education': 'Education', 'work': 'Working Life','income_happiness': 'Income', 'safety': 'Public Safety', 'time_use': 'Time Use', 'culture': 'Culture', 'religion': 'Religion and Spiritual', 'emotional': 'Emotional'}[datum.domain_key]",
+            "as": "Domain Label"
+        },
+        {
+            "calculate": "toNumber(datum.score)",
+            "as": "score"
         }
     ],
     "mark": "rect",
@@ -25,23 +37,23 @@
             "field":"state",
             "type": "nominal",
             "title": null,
-            "sort": "-x"
+            "sort": {"field": "score", "op": "mean", "order": "descending"}
         },
         "x":{
-            "field":"domain",
+            "field":"Domain Label",
             "type": "nominal",
             "title": null,
-            "sort": "-x"
+            "axis": {"labelAngle": -30, "labelFontSize": 10}
         },
         "color":{
             "field":"score",
             "type": "quantitative",
-            "scale":{"scheme": "blues"},
+            "scale":{"scheme": "blues", "domain": [5, 10]},
             "title": "Score"
         },
         "tooltip": [
             {"field": "state", "title": "State"},
-            {"field": "domain", "title": "Domain"},
+            {"field": "Domain Label", "title": "Life Domain"},
             {"field": "score", "title": "Score", "format": ".2f"}
         ]
     }
