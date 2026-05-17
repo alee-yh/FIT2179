@@ -1,0 +1,127 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "How Satisfied Are Malaysians With Their Income?",
+        "subtitle": "Income satisfaction sub-score from the Malaysian Happiness Index by State, 2024. National Average: 6.40",
+        "subtitleFontStyle": "italic",
+        "fontSize": 16,
+        "subtitleFontSize": 12,
+        "anchor": "start",
+        "color": "#1a1209",
+        "subtitleColor": "#5a4a2e"       
+    },
+    "width": 500,
+    "height": 420,
+    "data": {
+        "url": "data/income_satisfaction_by_state.csv"
+    },
+    "layer": [
+        {
+            "mark": {
+                "type": "bar",
+                "cornerRadiusEnd": 3
+            },
+            "encoding": {
+                "y": {
+                    "field": "state",
+                    "type": "nominal",
+                    "sort": {
+                        "field": "income satisfaction",
+                        "order": "descending"
+                    },
+                    "title": null,
+                    "axis": {
+                        "labelFontSize": 12,
+                        "labelColor": "#1a1209"
+                    }
+                },
+                "x": {
+                    "field": "income satisfaction",
+                    "type": "quantitative",
+                    "title": "Income Satisfaction Score",
+                    "scale": {
+                        "domain": [4.5, 8.5],
+                        "clamp": true
+                    },
+                    "axis": {
+                        "tickCount": 5,
+                        "labelFontSize": 11,
+                        "titleFontSize": 13,
+                        "titleColor": "#1a1209",
+                        "gridColor": "#ede8df",
+                        "gridOpacity": 0.8
+                    }
+                },
+                "color": {
+                    "condition": [
+                        {
+                            "test": "datum.state == 'Terengganu'",
+                            "value": "#c8860a"
+                        },
+                        {
+                            "test": "datum.state == 'W.P. Putrajaya'",
+                            "value": "#4a90b8"
+                        }
+                    ],
+                    "value": "#d4c9b8"
+                },
+                "tooltip": [
+                    {
+                        "field": "income satisfaction",
+                        "type": "quantitative",
+                        "title": "Income Satisfaction",
+                        "format": ".2f" 
+                    },
+                    {
+                        "field": "national average",
+                        "type": "quantitative",
+                        "title": "National Average",
+                        "format": ".2f"
+                    }
+                ]
+            }
+        },
+        {
+            "mark": {
+                "type": "rule",
+                "color": "#1a1209",
+                "strokeWidth": 1.5,
+                "strokeDash": [4, 3]
+            },
+            "encoding": {
+                "x": {
+                    "field": "national average",
+                    "type": "quantitative",
+                    "aggregate": "mean"
+                }
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 4, 
+                "dy": 130,
+                "fontSize": 10,
+                "fontStyle": "italic",
+                "color": "#1a1209"
+            },
+            "encoding": {
+                "x": {
+                    "field": "national average",
+                    "type": "quantitative",
+                    "aggregate": "mean"
+                },
+                "text": {
+                    "value": "National Average: 6.40"
+                }
+            }
+        }
+    ],
+    "config": {
+        "view": {
+            "stroke": "transparent"
+        },
+        "background": "#faf7f2"
+    }
+}

@@ -1,0 +1,224 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "How is Income Distributed Within Each State?",
+        "subtitle": "Median household income by income percentile, 2024. Capped at the 95th percentile to exclude extreme outliers.",
+        "subtitleFontStyle": "italic",
+        "fontSize": 16,
+        "subtitleFontSize": 12,
+        "anchor": "start",
+        "color": "#1a1209",
+        "subtitleColor": "#5a4a2e"
+    },
+    "width": 600,
+    "height": 380,
+    "data": {
+        "url": "data/income_distribution.csv"
+    },
+    "params": [
+        {
+            "name": "state_a",
+            "value": "Selangor",
+            "bind": {
+                "input": "select",
+                "options": [
+                    "Johor",
+                    "Kedah",
+                    "Kelantan",
+                    "Melaka",
+                    "Negeri Sembilan",
+                    "Pahang",
+                    "Perak",
+                    "Perlis",
+                    "Pulau Pinang",
+                    "Sabah",
+                    "Sarawak",
+                    "Selangor",
+                    "Terengganu",
+                    "W.P. Kuala Lumpur",
+                    "W.P. Labuan",
+                    "W.P. Putrajaya"
+                ],
+                "name": "Select a state: "
+            }
+        },
+        {
+            "name": "state_b",
+            "value": "Kelantan",
+            "bind": {
+                "input": "select",
+                "options": [
+                    "Johor",
+                    "Kedah",
+                    "Kelantan",
+                    "Melaka",
+                    "Negeri Sembilan",
+                    "Pahang",
+                    "Perak",
+                    "Perlis",
+                    "Pulau Pinang",
+                    "Sabah",
+                    "Sarawak",
+                    "Selangor",
+                    "Terengganu",
+                    "W.P. Kuala Lumpur",
+                    "W.P. Labuan",
+                    "W.P. Putrajaya"
+                ],
+                "name": "Select another state: "
+            }
+        }
+    ],
+    "layer": [
+        {
+            "transform": [
+                {
+                    "filter": "datum.state == state_a"
+                }
+            ],
+            "mark": {
+                "type": "area",
+                "color": "#c8860a",
+                "fillOpacity": 0.3,
+                "line": {
+                    "color": "#c8860a",
+                    "strokeWidth": 2
+                }
+            },
+            "encoding": {
+                "x": {
+                    "field": "percentile",
+                    "type": "quantitative",
+                    "title": "Income Percentile",
+                    "axis": {
+                        "tickCount": 10,
+                        "labelFontSize": 11,
+                        "titleFontSize": 13,
+                        "titleColor": "#1a1209",
+                        "gridColor": "#ede8df",
+                        "gridOpacity": 0.8
+                    }
+                },
+                "y": {
+                    "field": "income",
+                    "type": "quantitative",
+                    "title": "Median Monthly Income (RM)",
+                    "scale": {
+                        "domain": [0, 32000]
+                    },
+                    "axis": {
+                        "format": ",.0f",
+                        "tickCount": 6,
+                        "labelFontSize": 11,
+                        "titleFontSize": 13,
+                        "titleColor": "#1a1209",
+                        "gridColor": "#ede8df",
+                        "gridOpacity": 0.8
+                    }
+                },
+                "tooltip": [
+                    {
+                        "field": "state",
+                        "type": "nominal",
+                        "title": "State"
+                    },
+                    {
+                        "field": "percentile",
+                        "type": "quantitative",
+                        "title": "Percentile"
+                    },
+                    {
+                        "field": "income",
+                        "type": "quantitative",
+                        "title": "Median Income (RM)",
+                        "format": ",.0f"
+                    }
+                ]
+            }
+        },
+        {
+            "transform": [
+                {
+                    "filter": "datum.state == state_b"
+                }
+            ],
+            "mark": {
+                "type": "area",
+                "color": "#4a90b8",
+                "fillOpacity": 0.3,
+                "line": {
+                    "color": "#4a90b8",
+                    "strokeWidth": 2
+                }
+            },
+            "encoding": {
+                "x": {
+                    "field": "percentile",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "income",
+                    "type": "quantitative"
+                },
+                "tooltip": [
+                    {
+                        "field": "state",
+                        "type": "nominal",
+                        "title": "State"
+                    },
+                    {
+                        "field": "percentile",
+                        "type": "quantitative",
+                        "title": "Percentile"
+                    },
+                    {
+                        "field": "income",
+                        "type": "quantitative",
+                        "title": "Median Income (RM)",
+                        "format": ",.0f"
+                    }
+                ]
+            }
+        },
+        {
+            "mark": {
+                "type": "rule",
+                "color": "#1a1209",
+                "strokeWidth": 1.0,
+                "strokeDash": [4, 3]
+            },
+            "encoding": {
+                "x": {
+                    "datum": 50,
+                    "type": "quantitative"
+                }
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 4,
+                "dy": -120,
+                "fontSize": 10,
+                "fontStyle": "italic",
+                "color": "#1a1209"
+            },
+            "encoding": {
+                "x": {
+                    "datum": 50,
+                    "type": "quantitative"
+                },
+                "text": {
+                    "value": "Median (50th Percentile)"
+                }
+            }
+        }
+    ],
+    "config": {
+        "view": {
+            "stroke": "transparent"
+        },
+        "background": "#faf7f2"
+    }
+}

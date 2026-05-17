@@ -1,0 +1,1521 @@
+state,percentile,income
+Johor,1,1682
+Johor,2,2084
+Johor,3,2343
+Johor,4,2574
+Johor,5,2762
+Johor,6,2912
+Johor,7,3052
+Johor,8,3192
+Johor,9,3324
+Johor,10,3444
+Johor,11,3571
+Johor,12,3668
+Johor,13,3768
+Johor,14,3857
+Johor,15,4024
+Johor,16,4110
+Johor,17,4169
+Johor,18,4293
+Johor,19,4400
+Johor,20,4505
+Johor,21,4619
+Johor,22,4711
+Johor,23,4810
+Johor,24,4893
+Johor,25,4996
+Johor,26,5110
+Johor,27,5206
+Johor,28,5310
+Johor,29,5396
+Johor,30,5490
+Johor,31,5590
+Johor,32,5660
+Johor,33,5763
+Johor,34,5858
+Johor,35,5986
+Johor,36,6109
+Johor,37,6204
+Johor,38,6313
+Johor,39,6426
+Johor,40,6510
+Johor,41,6612
+Johor,42,6713
+Johor,43,6826
+Johor,44,6920
+Johor,45,7016
+Johor,46,7119
+Johor,47,7255
+Johor,48,7350
+Johor,49,7497
+Johor,50,7627
+Johor,51,7772
+Johor,52,7920
+Johor,53,8022
+Johor,54,8108
+Johor,55,8204
+Johor,56,8345
+Johor,57,8469
+Johor,58,8653
+Johor,59,8776
+Johor,60,8920
+Johor,61,9053
+Johor,62,9218
+Johor,63,9360
+Johor,64,9517
+Johor,65,9655
+Johor,66,9840
+Johor,67,10047
+Johor,68,10192
+Johor,69,10367
+Johor,70,10520
+Johor,71,10731
+Johor,72,10909
+Johor,73,11072
+Johor,74,11314
+Johor,75,12106
+Johor,76,12734
+Johor,77,12918
+Johor,78,13113
+Johor,79,13274
+Johor,80,13460
+Johor,81,13630
+Johor,82,13826
+Johor,83,14015
+Johor,84,14225
+Johor,85,14463
+Johor,86,14717
+Johor,87,14999
+Johor,88,15510
+Johor,89,15986
+Johor,90,16517
+Johor,91,16938
+Johor,92,17541
+Johor,93,18323
+Johor,94,19332
+Johor,95,20561
+Kedah,1,1178
+Kedah,2,1414
+Kedah,3,1504
+Kedah,4,1595
+Kedah,5,1690
+Kedah,6,1776
+Kedah,7,1853
+Kedah,8,1934
+Kedah,9,2017
+Kedah,10,2164
+Kedah,11,2248
+Kedah,12,2354
+Kedah,13,2421
+Kedah,14,2481
+Kedah,15,2567
+Kedah,16,2625
+Kedah,17,2676
+Kedah,18,2738
+Kedah,19,2805
+Kedah,20,2871
+Kedah,21,2916
+Kedah,22,2982
+Kedah,23,3031
+Kedah,24,3077
+Kedah,25,3137
+Kedah,26,3180
+Kedah,27,3236
+Kedah,28,3273
+Kedah,29,3338
+Kedah,30,3390
+Kedah,31,3446
+Kedah,32,3485
+Kedah,33,3544
+Kedah,34,3586
+Kedah,35,3640
+Kedah,36,3681
+Kedah,37,3721
+Kedah,38,3775
+Kedah,39,3835
+Kedah,40,3894
+Kedah,41,4033
+Kedah,42,4207
+Kedah,43,4348
+Kedah,44,4430
+Kedah,45,4510
+Kedah,46,4588
+Kedah,47,4652
+Kedah,48,4711
+Kedah,49,4797
+Kedah,50,4866
+Kedah,51,4938
+Kedah,52,5014
+Kedah,53,5076
+Kedah,54,5155
+Kedah,55,5217
+Kedah,56,5294
+Kedah,57,5359
+Kedah,58,5434
+Kedah,59,5532
+Kedah,60,5630
+Kedah,61,5704
+Kedah,62,5797
+Kedah,63,5891
+Kedah,64,5941
+Kedah,65,6050
+Kedah,66,6144
+Kedah,67,6300
+Kedah,68,6438
+Kedah,69,6534
+Kedah,70,6638
+Kedah,71,6734
+Kedah,72,6828
+Kedah,73,6926
+Kedah,74,7004
+Kedah,75,7080
+Kedah,76,7190
+Kedah,77,7320
+Kedah,78,7439
+Kedah,79,7547
+Kedah,80,7720
+Kedah,81,7932
+Kedah,82,8329
+Kedah,83,8550
+Kedah,84,8795
+Kedah,85,9013
+Kedah,86,9254
+Kedah,87,9497
+Kedah,88,9717
+Kedah,89,10104
+Kedah,90,10471
+Kedah,91,10843
+Kedah,92,11222
+Kedah,93,11750
+Kedah,94,12300
+Kedah,95,12726
+Kelantan,1,1266
+Kelantan,2,1388
+Kelantan,3,1491
+Kelantan,4,1548
+Kelantan,5,1605
+Kelantan,6,1654
+Kelantan,7,1735
+Kelantan,8,1805
+Kelantan,9,1878
+Kelantan,10,1963
+Kelantan,11,2051
+Kelantan,12,2101
+Kelantan,13,2168
+Kelantan,14,2223
+Kelantan,15,2281
+Kelantan,16,2338
+Kelantan,17,2378
+Kelantan,18,2418
+Kelantan,19,2481
+Kelantan,20,2524
+Kelantan,21,2559
+Kelantan,22,2615
+Kelantan,23,2661
+Kelantan,24,2698
+Kelantan,25,2746
+Kelantan,26,2796
+Kelantan,27,2840
+Kelantan,28,2892
+Kelantan,29,2941
+Kelantan,30,2995
+Kelantan,31,3032
+Kelantan,32,3080
+Kelantan,33,3125
+Kelantan,34,3186
+Kelantan,35,3242
+Kelantan,36,3305
+Kelantan,37,3359
+Kelantan,38,3390
+Kelantan,39,3444
+Kelantan,40,3497
+Kelantan,41,3541
+Kelantan,42,3608
+Kelantan,43,3648
+Kelantan,44,3689
+Kelantan,45,3745
+Kelantan,46,3792
+Kelantan,47,3857
+Kelantan,48,3933
+Kelantan,49,3985
+Kelantan,50,4043
+Kelantan,51,4113
+Kelantan,52,4162
+Kelantan,53,4229
+Kelantan,54,4292
+Kelantan,55,4368
+Kelantan,56,4445
+Kelantan,57,4513
+Kelantan,58,4588
+Kelantan,59,4663
+Kelantan,60,4730
+Kelantan,61,4809
+Kelantan,62,4888
+Kelantan,63,4972
+Kelantan,64,5058
+Kelantan,65,5137
+Kelantan,66,5243
+Kelantan,67,5347
+Kelantan,68,5416
+Kelantan,69,5507
+Kelantan,70,5561
+Kelantan,71,5657
+Kelantan,72,5746
+Kelantan,73,5837
+Kelantan,74,5968
+Kelantan,75,6175
+Kelantan,76,6329
+Kelantan,77,6438
+Kelantan,78,6582
+Kelantan,79,6751
+Kelantan,80,6918
+Kelantan,81,7113
+Kelantan,82,7336
+Kelantan,83,7646
+Kelantan,84,7868
+Kelantan,85,8146
+Kelantan,86,8423
+Kelantan,87,8731
+Kelantan,88,9077
+Kelantan,89,9425
+Kelantan,90,9760
+Kelantan,91,10079
+Kelantan,92,10661
+Kelantan,93,11271
+Kelantan,94,11763
+Kelantan,95,12557
+Melaka,1,2626
+Melaka,2,2807
+Melaka,3,2904
+Melaka,4,2943
+Melaka,5,3026
+Melaka,6,3082
+Melaka,7,3159
+Melaka,8,3244
+Melaka,9,3311
+Melaka,10,3397
+Melaka,11,3491
+Melaka,12,3562
+Melaka,13,3673
+Melaka,14,3794
+Melaka,15,3888
+Melaka,16,3966
+Melaka,17,4053
+Melaka,18,4111
+Melaka,19,4194
+Melaka,20,4247
+Melaka,21,4349
+Melaka,22,4432
+Melaka,23,4528
+Melaka,24,4594
+Melaka,25,4673
+Melaka,26,4761
+Melaka,27,4843
+Melaka,28,4919
+Melaka,29,5014
+Melaka,30,5085
+Melaka,31,5149
+Melaka,32,5296
+Melaka,33,5349
+Melaka,34,5473
+Melaka,35,5525
+Melaka,36,5603
+Melaka,37,5711
+Melaka,38,5797
+Melaka,39,5842
+Melaka,40,5897
+Melaka,41,5976
+Melaka,42,6040
+Melaka,43,6170
+Melaka,44,6269
+Melaka,45,6369
+Melaka,46,6455
+Melaka,47,6573
+Melaka,48,6713
+Melaka,49,6780
+Melaka,50,6849
+Melaka,51,6935
+Melaka,52,7100
+Melaka,53,7213
+Melaka,54,7330
+Melaka,55,7455
+Melaka,56,7580
+Melaka,57,7686
+Melaka,58,7809
+Melaka,59,7912
+Melaka,60,8038
+Melaka,61,8154
+Melaka,62,8296
+Melaka,63,8459
+Melaka,64,8594
+Melaka,65,8740
+Melaka,66,8860
+Melaka,67,9062
+Melaka,68,9170
+Melaka,69,9316
+Melaka,70,9445
+Melaka,71,9690
+Melaka,72,9869
+Melaka,73,10068
+Melaka,74,10229
+Melaka,75,10373
+Melaka,76,10568
+Melaka,77,10815
+Melaka,78,11021
+Melaka,79,11244
+Melaka,80,11472
+Melaka,81,11948
+Melaka,82,12292
+Melaka,83,12680
+Melaka,84,12782
+Melaka,85,13017
+Melaka,86,13381
+Melaka,87,13813
+Melaka,88,14273
+Melaka,89,14842
+Melaka,90,15181
+Melaka,91,15570
+Melaka,92,16147
+Melaka,93,17186
+Melaka,94,18057
+Melaka,95,18833
+Negeri Sembilan,1,1297
+Negeri Sembilan,2,1604
+Negeri Sembilan,3,1882
+Negeri Sembilan,4,2002
+Negeri Sembilan,5,2143
+Negeri Sembilan,6,2230
+Negeri Sembilan,7,2354
+Negeri Sembilan,8,2446
+Negeri Sembilan,9,2541
+Negeri Sembilan,10,2622
+Negeri Sembilan,11,2704
+Negeri Sembilan,12,2790
+Negeri Sembilan,13,2872
+Negeri Sembilan,14,2913
+Negeri Sembilan,15,2978
+Negeri Sembilan,16,3040
+Negeri Sembilan,17,3087
+Negeri Sembilan,18,3155
+Negeri Sembilan,19,3226
+Negeri Sembilan,20,3296
+Negeri Sembilan,21,3343
+Negeri Sembilan,22,3417
+Negeri Sembilan,23,3468
+Negeri Sembilan,24,3543
+Negeri Sembilan,25,3599
+Negeri Sembilan,26,3680
+Negeri Sembilan,27,3764
+Negeri Sembilan,28,3815
+Negeri Sembilan,29,3888
+Negeri Sembilan,30,3994
+Negeri Sembilan,31,4057
+Negeri Sembilan,32,4116
+Negeri Sembilan,33,4169
+Negeri Sembilan,34,4247
+Negeri Sembilan,35,4335
+Negeri Sembilan,36,4392
+Negeri Sembilan,37,4477
+Negeri Sembilan,38,4532
+Negeri Sembilan,39,4598
+Negeri Sembilan,40,4662
+Negeri Sembilan,41,4746
+Negeri Sembilan,42,4851
+Negeri Sembilan,43,4948
+Negeri Sembilan,44,5043
+Negeri Sembilan,45,5129
+Negeri Sembilan,46,5204
+Negeri Sembilan,47,5256
+Negeri Sembilan,48,5357
+Negeri Sembilan,49,5463
+Negeri Sembilan,50,5543
+Negeri Sembilan,51,5656
+Negeri Sembilan,52,5736
+Negeri Sembilan,53,5819
+Negeri Sembilan,54,5956
+Negeri Sembilan,55,6081
+Negeri Sembilan,56,6183
+Negeri Sembilan,57,6300
+Negeri Sembilan,58,6390
+Negeri Sembilan,59,6464
+Negeri Sembilan,60,6559
+Negeri Sembilan,61,6700
+Negeri Sembilan,62,6793
+Negeri Sembilan,63,6928
+Negeri Sembilan,64,7056
+Negeri Sembilan,65,7200
+Negeri Sembilan,66,7336
+Negeri Sembilan,67,7474
+Negeri Sembilan,68,7581
+Negeri Sembilan,69,7755
+Negeri Sembilan,70,7906
+Negeri Sembilan,71,8050
+Negeri Sembilan,72,8185
+Negeri Sembilan,73,8286
+Negeri Sembilan,74,8425
+Negeri Sembilan,75,8613
+Negeri Sembilan,76,8808
+Negeri Sembilan,77,8986
+Negeri Sembilan,78,9172
+Negeri Sembilan,79,9369
+Negeri Sembilan,80,9739
+Negeri Sembilan,81,10136
+Negeri Sembilan,82,10484
+Negeri Sembilan,83,10770
+Negeri Sembilan,84,10913
+Negeri Sembilan,85,11149
+Negeri Sembilan,86,11649
+Negeri Sembilan,87,12566
+Negeri Sembilan,88,12852
+Negeri Sembilan,89,13159
+Negeri Sembilan,90,13563
+Negeri Sembilan,91,13854
+Negeri Sembilan,92,14297
+Negeri Sembilan,93,14937
+Negeri Sembilan,94,15848
+Negeri Sembilan,95,16932
+Pahang,1,1428
+Pahang,2,1855
+Pahang,3,2018
+Pahang,4,2167
+Pahang,5,2319
+Pahang,6,2419
+Pahang,7,2494
+Pahang,8,2555
+Pahang,9,2651
+Pahang,10,2716
+Pahang,11,2766
+Pahang,12,2816
+Pahang,13,2881
+Pahang,14,2928
+Pahang,15,2987
+Pahang,16,3048
+Pahang,17,3077
+Pahang,18,3114
+Pahang,19,3164
+Pahang,20,3233
+Pahang,21,3281
+Pahang,22,3336
+Pahang,23,3386
+Pahang,24,3437
+Pahang,25,3484
+Pahang,26,3535
+Pahang,27,3562
+Pahang,28,3629
+Pahang,29,3672
+Pahang,30,3745
+Pahang,31,3802
+Pahang,32,3851
+Pahang,33,3919
+Pahang,34,3964
+Pahang,35,4018
+Pahang,36,4076
+Pahang,37,4132
+Pahang,38,4199
+Pahang,39,4247
+Pahang,40,4306
+Pahang,41,4356
+Pahang,42,4410
+Pahang,43,4490
+Pahang,44,4570
+Pahang,45,4640
+Pahang,46,4711
+Pahang,47,4772
+Pahang,48,4824
+Pahang,49,4883
+Pahang,50,4947
+Pahang,51,5011
+Pahang,52,5067
+Pahang,53,5097
+Pahang,54,5163
+Pahang,55,5216
+Pahang,56,5273
+Pahang,57,5333
+Pahang,58,5380
+Pahang,59,5448
+Pahang,60,5516
+Pahang,61,5578
+Pahang,62,5645
+Pahang,63,5718
+Pahang,64,5779
+Pahang,65,5825
+Pahang,66,5903
+Pahang,67,5958
+Pahang,68,6164
+Pahang,69,6306
+Pahang,70,6365
+Pahang,71,6448
+Pahang,72,6508
+Pahang,73,6570
+Pahang,74,6621
+Pahang,75,6711
+Pahang,76,6824
+Pahang,77,6911
+Pahang,78,7016
+Pahang,79,7410
+Pahang,80,7925
+Pahang,81,8188
+Pahang,82,8365
+Pahang,83,8517
+Pahang,84,8779
+Pahang,85,9018
+Pahang,86,9305
+Pahang,87,9575
+Pahang,88,9851
+Pahang,89,10245
+Pahang,90,10668
+Pahang,91,11070
+Pahang,92,11656
+Pahang,93,12068
+Pahang,94,12795
+Pahang,95,13646
+Perak,1,1181
+Perak,2,1585
+Perak,3,1781
+Perak,4,1913
+Perak,5,2051
+Perak,6,2086
+Perak,7,2119
+Perak,8,2171
+Perak,9,2218
+Perak,10,2268
+Perak,11,2309
+Perak,12,2373
+Perak,13,2448
+Perak,14,2500
+Perak,15,2552
+Perak,16,2604
+Perak,17,2659
+Perak,18,2728
+Perak,19,2798
+Perak,20,2861
+Perak,21,2914
+Perak,22,2972
+Perak,23,3048
+Perak,24,3082
+Perak,25,3120
+Perak,26,3171
+Perak,27,3206
+Perak,28,3253
+Perak,29,3306
+Perak,30,3364
+Perak,31,3416
+Perak,32,3466
+Perak,33,3513
+Perak,34,3582
+Perak,35,3638
+Perak,36,3693
+Perak,37,3748
+Perak,38,3809
+Perak,39,3868
+Perak,40,3933
+Perak,41,4001
+Perak,42,4070
+Perak,43,4142
+Perak,44,4230
+Perak,45,4298
+Perak,46,4353
+Perak,47,4422
+Perak,48,4489
+Perak,49,4554
+Perak,50,4645
+Perak,51,4721
+Perak,52,4823
+Perak,53,4905
+Perak,54,5035
+Perak,55,5109
+Perak,56,5208
+Perak,57,5301
+Perak,58,5372
+Perak,59,5459
+Perak,60,5546
+Perak,61,5653
+Perak,62,5754
+Perak,63,5836
+Perak,64,5924
+Perak,65,6006
+Perak,66,6110
+Perak,67,6273
+Perak,68,6372
+Perak,69,6474
+Perak,70,6573
+Perak,71,6665
+Perak,72,6787
+Perak,73,6874
+Perak,74,6972
+Perak,75,7170
+Perak,76,7376
+Perak,77,7542
+Perak,78,7712
+Perak,79,7860
+Perak,80,8046
+Perak,81,8447
+Perak,82,8718
+Perak,83,9000
+Perak,84,9177
+Perak,85,9448
+Perak,86,9738
+Perak,87,10025
+Perak,88,10406
+Perak,89,10719
+Perak,90,11131
+Perak,91,11848
+Perak,92,12370
+Perak,93,12819
+Perak,94,13718
+Perak,95,14743
+Perlis,1,1254
+Perlis,2,1336
+Perlis,3,1601
+Perlis,4,1658
+Perlis,5,1833
+Perlis,6,1997
+Perlis,7,2082
+Perlis,8,2148
+Perlis,9,2271
+Perlis,10,2348
+Perlis,11,2446
+Perlis,12,2513
+Perlis,13,2606
+Perlis,14,2676
+Perlis,15,2745
+Perlis,16,2784
+Perlis,17,2847
+Perlis,18,2920
+Perlis,19,2971
+Perlis,20,3005
+Perlis,21,3065
+Perlis,22,3109
+Perlis,23,3159
+Perlis,24,3189
+Perlis,25,3263
+Perlis,26,3329
+Perlis,27,3410
+Perlis,28,3477
+Perlis,29,3542
+Perlis,30,3593
+Perlis,31,3639
+Perlis,32,3694
+Perlis,33,3736
+Perlis,34,3793
+Perlis,35,3891
+Perlis,36,3945
+Perlis,37,4035
+Perlis,38,4131
+Perlis,39,4194
+Perlis,40,4247
+Perlis,41,4316
+Perlis,42,4374
+Perlis,43,4414
+Perlis,44,4496
+Perlis,45,4585
+Perlis,46,4675
+Perlis,47,4751
+Perlis,48,4806
+Perlis,49,4889
+Perlis,50,4923
+Perlis,51,4984
+Perlis,52,5093
+Perlis,53,5158
+Perlis,54,5199
+Perlis,55,5289
+Perlis,56,5335
+Perlis,57,5363
+Perlis,58,5440
+Perlis,59,5575
+Perlis,60,5649
+Perlis,61,5731
+Perlis,62,5823
+Perlis,63,5863
+Perlis,64,5890
+Perlis,65,5995
+Perlis,66,6134
+Perlis,67,6343
+Perlis,68,6443
+Perlis,69,6516
+Perlis,70,6646
+Perlis,71,6784
+Perlis,72,6894
+Perlis,73,6964
+Perlis,74,7041
+Perlis,75,7214
+Perlis,76,7322
+Perlis,77,7460
+Perlis,78,7665
+Perlis,79,7847
+Perlis,80,7980
+Perlis,81,8030
+Perlis,82,8273
+Perlis,83,8585
+Perlis,84,8823
+Perlis,85,9073
+Perlis,86,9161
+Perlis,87,9355
+Perlis,88,9731
+Perlis,89,9947
+Perlis,90,10274
+Perlis,91,10828
+Perlis,92,11438
+Perlis,93,12100
+Perlis,94,12565
+Perlis,95,13802
+Pulau Pinang,1,1477
+Pulau Pinang,2,1810
+Pulau Pinang,3,1986
+Pulau Pinang,4,2192
+Pulau Pinang,5,2353
+Pulau Pinang,6,2527
+Pulau Pinang,7,2664
+Pulau Pinang,8,2846
+Pulau Pinang,9,3012
+Pulau Pinang,10,3123
+Pulau Pinang,11,3245
+Pulau Pinang,12,3370
+Pulau Pinang,13,3470
+Pulau Pinang,14,3568
+Pulau Pinang,15,3657
+Pulau Pinang,16,3760
+Pulau Pinang,17,3864
+Pulau Pinang,18,3980
+Pulau Pinang,19,4074
+Pulau Pinang,20,4182
+Pulau Pinang,21,4283
+Pulau Pinang,22,4364
+Pulau Pinang,23,4463
+Pulau Pinang,24,4547
+Pulau Pinang,25,4673
+Pulau Pinang,26,4768
+Pulau Pinang,27,4874
+Pulau Pinang,28,4948
+Pulau Pinang,29,5062
+Pulau Pinang,30,5155
+Pulau Pinang,31,5266
+Pulau Pinang,32,5390
+Pulau Pinang,33,5479
+Pulau Pinang,34,5579
+Pulau Pinang,35,5709
+Pulau Pinang,36,5840
+Pulau Pinang,37,5942
+Pulau Pinang,38,6087
+Pulau Pinang,39,6193
+Pulau Pinang,40,6294
+Pulau Pinang,41,6420
+Pulau Pinang,42,6519
+Pulau Pinang,43,6623
+Pulau Pinang,44,6717
+Pulau Pinang,45,6802
+Pulau Pinang,46,6909
+Pulau Pinang,47,6989
+Pulau Pinang,48,7077
+Pulau Pinang,49,7214
+Pulau Pinang,50,7327
+Pulau Pinang,51,7448
+Pulau Pinang,52,7581
+Pulau Pinang,53,7697
+Pulau Pinang,54,7808
+Pulau Pinang,55,7942
+Pulau Pinang,56,8065
+Pulau Pinang,57,8199
+Pulau Pinang,58,8342
+Pulau Pinang,59,8467
+Pulau Pinang,60,8591
+Pulau Pinang,61,8731
+Pulau Pinang,62,8893
+Pulau Pinang,63,9029
+Pulau Pinang,64,9208
+Pulau Pinang,65,9329
+Pulau Pinang,66,9528
+Pulau Pinang,67,9670
+Pulau Pinang,68,9817
+Pulau Pinang,69,9998
+Pulau Pinang,70,10214
+Pulau Pinang,71,10402
+Pulau Pinang,72,10584
+Pulau Pinang,73,10752
+Pulau Pinang,74,10916
+Pulau Pinang,75,11142
+Pulau Pinang,76,11335
+Pulau Pinang,77,11546
+Pulau Pinang,78,11872
+Pulau Pinang,79,12289
+Pulau Pinang,80,12584
+Pulau Pinang,81,12758
+Pulau Pinang,82,13047
+Pulau Pinang,83,13240
+Pulau Pinang,84,13588
+Pulau Pinang,85,13898
+Pulau Pinang,86,14141
+Pulau Pinang,87,14582
+Pulau Pinang,88,14972
+Pulau Pinang,89,15535
+Pulau Pinang,90,16186
+Pulau Pinang,91,16789
+Pulau Pinang,92,17577
+Pulau Pinang,93,18181
+Pulau Pinang,94,18965
+Pulau Pinang,95,19855
+Sabah,1,1082
+Sabah,2,1334
+Sabah,3,1479
+Sabah,4,1592
+Sabah,5,1700
+Sabah,6,1831
+Sabah,7,1907
+Sabah,8,2009
+Sabah,9,2087
+Sabah,10,2145
+Sabah,11,2220
+Sabah,12,2288
+Sabah,13,2358
+Sabah,14,2414
+Sabah,15,2484
+Sabah,16,2534
+Sabah,17,2586
+Sabah,18,2647
+Sabah,19,2706
+Sabah,20,2757
+Sabah,21,2817
+Sabah,22,2868
+Sabah,23,2928
+Sabah,24,2982
+Sabah,25,3056
+Sabah,26,3121
+Sabah,27,3175
+Sabah,28,3245
+Sabah,29,3334
+Sabah,30,3384
+Sabah,31,3455
+Sabah,32,3509
+Sabah,33,3600
+Sabah,34,3686
+Sabah,35,3749
+Sabah,36,3815
+Sabah,37,3883
+Sabah,38,3948
+Sabah,39,4017
+Sabah,40,4093
+Sabah,41,4161
+Sabah,42,4215
+Sabah,43,4297
+Sabah,44,4363
+Sabah,45,4445
+Sabah,46,4510
+Sabah,47,4594
+Sabah,48,4684
+Sabah,49,4765
+Sabah,50,4852
+Sabah,51,4928
+Sabah,52,4996
+Sabah,53,5069
+Sabah,54,5151
+Sabah,55,5224
+Sabah,56,5303
+Sabah,57,5383
+Sabah,58,5475
+Sabah,59,5559
+Sabah,60,5650
+Sabah,61,5738
+Sabah,62,5832
+Sabah,63,5940
+Sabah,64,6118
+Sabah,65,6331
+Sabah,66,6438
+Sabah,67,6569
+Sabah,68,6677
+Sabah,69,6796
+Sabah,70,6892
+Sabah,71,7005
+Sabah,72,7169
+Sabah,73,7429
+Sabah,74,7608
+Sabah,75,7833
+Sabah,76,7977
+Sabah,77,8325
+Sabah,78,8584
+Sabah,79,8808
+Sabah,80,9021
+Sabah,81,9267
+Sabah,82,9534
+Sabah,83,9837
+Sabah,84,10138
+Sabah,85,10466
+Sabah,86,10853
+Sabah,87,11188
+Sabah,88,11627
+Sabah,89,12099
+Sabah,90,12526
+Sabah,91,12992
+Sabah,92,13558
+Sabah,93,14361
+Sabah,94,14962
+Sabah,95,15799
+Sarawak,1,1318
+Sarawak,2,1625
+Sarawak,3,1762
+Sarawak,4,1851
+Sarawak,5,1956
+Sarawak,6,2057
+Sarawak,7,2152
+Sarawak,8,2235
+Sarawak,9,2314
+Sarawak,10,2388
+Sarawak,11,2469
+Sarawak,12,2543
+Sarawak,13,2611
+Sarawak,14,2679
+Sarawak,15,2765
+Sarawak,16,2840
+Sarawak,17,2924
+Sarawak,18,3001
+Sarawak,19,3071
+Sarawak,20,3131
+Sarawak,21,3196
+Sarawak,22,3264
+Sarawak,23,3329
+Sarawak,24,3405
+Sarawak,25,3477
+Sarawak,26,3555
+Sarawak,27,3636
+Sarawak,28,3705
+Sarawak,29,3789
+Sarawak,30,3859
+Sarawak,31,3938
+Sarawak,32,4010
+Sarawak,33,4099
+Sarawak,34,4174
+Sarawak,35,4239
+Sarawak,36,4318
+Sarawak,37,4381
+Sarawak,38,4470
+Sarawak,39,4548
+Sarawak,40,4618
+Sarawak,41,4713
+Sarawak,42,4816
+Sarawak,43,4898
+Sarawak,44,4983
+Sarawak,45,5062
+Sarawak,46,5139
+Sarawak,47,5206
+Sarawak,48,5296
+Sarawak,49,5371
+Sarawak,50,5454
+Sarawak,51,5552
+Sarawak,52,5631
+Sarawak,53,5724
+Sarawak,54,5816
+Sarawak,55,5917
+Sarawak,56,6006
+Sarawak,57,6113
+Sarawak,58,6241
+Sarawak,59,6350
+Sarawak,60,6466
+Sarawak,61,6591
+Sarawak,62,6692
+Sarawak,63,6814
+Sarawak,64,6924
+Sarawak,65,7012
+Sarawak,66,7149
+Sarawak,67,7289
+Sarawak,68,7420
+Sarawak,69,7591
+Sarawak,70,7708
+Sarawak,71,7876
+Sarawak,72,8052
+Sarawak,73,8215
+Sarawak,74,8394
+Sarawak,75,8570
+Sarawak,76,8734
+Sarawak,77,8946
+Sarawak,78,9134
+Sarawak,79,9356
+Sarawak,80,9594
+Sarawak,81,9848
+Sarawak,82,10094
+Sarawak,83,10318
+Sarawak,84,10643
+Sarawak,85,11009
+Sarawak,86,11307
+Sarawak,87,11679
+Sarawak,88,12073
+Sarawak,89,12572
+Sarawak,90,12920
+Sarawak,91,13323
+Sarawak,92,13855
+Sarawak,93,14446
+Sarawak,94,15158
+Sarawak,95,15956
+Selangor,1,2604
+Selangor,2,3304
+Selangor,3,3784
+Selangor,4,4148
+Selangor,5,4443
+Selangor,6,4723
+Selangor,7,4972
+Selangor,8,5159
+Selangor,9,5395
+Selangor,10,5583
+Selangor,11,5701
+Selangor,12,5856
+Selangor,13,6039
+Selangor,14,6323
+Selangor,15,6487
+Selangor,16,6634
+Selangor,17,6756
+Selangor,18,6845
+Selangor,19,6954
+Selangor,20,7184
+Selangor,21,7492
+Selangor,22,7647
+Selangor,23,7777
+Selangor,24,7882
+Selangor,25,7998
+Selangor,26,8164
+Selangor,27,8374
+Selangor,28,8464
+Selangor,29,8520
+Selangor,30,8592
+Selangor,31,8673
+Selangor,32,8759
+Selangor,33,8821
+Selangor,34,8896
+Selangor,35,9002
+Selangor,36,9130
+Selangor,37,9220
+Selangor,38,9322
+Selangor,39,9431
+Selangor,40,9515
+Selangor,41,9617
+Selangor,42,9727
+Selangor,43,9875
+Selangor,44,10096
+Selangor,45,10210
+Selangor,46,10313
+Selangor,47,10399
+Selangor,48,10498
+Selangor,49,10583
+Selangor,50,10676
+Selangor,51,10768
+Selangor,52,10842
+Selangor,53,10945
+Selangor,54,11039
+Selangor,55,11123
+Selangor,56,11223
+Selangor,57,11314
+Selangor,58,11415
+Selangor,59,11509
+Selangor,60,11744
+Selangor,61,12037
+Selangor,62,12264
+Selangor,63,12442
+Selangor,64,12620
+Selangor,65,12735
+Selangor,66,12863
+Selangor,67,13013
+Selangor,68,13191
+Selangor,69,13326
+Selangor,70,13517
+Selangor,71,13663
+Selangor,72,13796
+Selangor,73,13949
+Selangor,74,14151
+Selangor,75,14330
+Selangor,76,14580
+Selangor,77,15100
+Selangor,78,15363
+Selangor,79,15637
+Selangor,80,15899
+Selangor,81,16234
+Selangor,82,16670
+Selangor,83,17052
+Selangor,84,17411
+Selangor,85,17912
+Selangor,86,18383
+Selangor,87,18909
+Selangor,88,19546
+Selangor,89,20324
+Selangor,90,21131
+Selangor,91,22129
+Selangor,92,23105
+Selangor,93,24599
+Selangor,94,25869
+Selangor,95,27586
+Terengganu,1,1795
+Terengganu,2,2308
+Terengganu,3,2619
+Terengganu,4,2766
+Terengganu,5,2910
+Terengganu,6,2997
+Terengganu,7,3087
+Terengganu,8,3166
+Terengganu,9,3245
+Terengganu,10,3309
+Terengganu,11,3390
+Terengganu,12,3459
+Terengganu,13,3552
+Terengganu,14,3612
+Terengganu,15,3673
+Terengganu,16,3757
+Terengganu,17,3842
+Terengganu,18,3922
+Terengganu,19,4009
+Terengganu,20,4088
+Terengganu,21,4174
+Terengganu,22,4252
+Terengganu,23,4342
+Terengganu,24,4403
+Terengganu,25,4490
+Terengganu,26,4545
+Terengganu,27,4624
+Terengganu,28,4739
+Terengganu,29,4838
+Terengganu,30,4926
+Terengganu,31,4996
+Terengganu,32,5084
+Terengganu,33,5159
+Terengganu,34,5230
+Terengganu,35,5317
+Terengganu,36,5396
+Terengganu,37,5497
+Terengganu,38,5639
+Terengganu,39,5753
+Terengganu,40,5847
+Terengganu,41,5928
+Terengganu,42,6032
+Terengganu,43,6123
+Terengganu,44,6192
+Terengganu,45,6268
+Terengganu,46,6331
+Terengganu,47,6381
+Terengganu,48,6450
+Terengganu,49,6524
+Terengganu,50,6592
+Terengganu,51,6684
+Terengganu,52,6754
+Terengganu,53,6829
+Terengganu,54,6896
+Terengganu,55,6976
+Terengganu,56,7051
+Terengganu,57,7127
+Terengganu,58,7187
+Terengganu,59,7261
+Terengganu,60,7315
+Terengganu,61,7403
+Terengganu,62,7469
+Terengganu,63,7580
+Terengganu,64,7686
+Terengganu,65,7755
+Terengganu,66,7851
+Terengganu,67,7934
+Terengganu,68,8029
+Terengganu,69,8171
+Terengganu,70,8282
+Terengganu,71,8379
+Terengganu,72,8505
+Terengganu,73,8686
+Terengganu,74,8819
+Terengganu,75,8954
+Terengganu,76,9068
+Terengganu,77,9190
+Terengganu,78,9366
+Terengganu,79,9550
+Terengganu,80,9704
+Terengganu,81,9866
+Terengganu,82,10040
+Terengganu,83,10323
+Terengganu,84,10542
+Terengganu,85,10786
+Terengganu,86,11156
+Terengganu,87,11566
+Terengganu,88,12079
+Terengganu,89,12727
+Terengganu,90,13211
+Terengganu,91,13528
+Terengganu,92,13947
+Terengganu,93,14697
+Terengganu,94,15549
+Terengganu,95,16516
+W.P. Kuala Lumpur,1,2124
+W.P. Kuala Lumpur,2,3012
+W.P. Kuala Lumpur,3,3409
+W.P. Kuala Lumpur,4,3672
+W.P. Kuala Lumpur,5,3864
+W.P. Kuala Lumpur,6,4063
+W.P. Kuala Lumpur,7,4223
+W.P. Kuala Lumpur,8,4517
+W.P. Kuala Lumpur,9,4744
+W.P. Kuala Lumpur,10,4970
+W.P. Kuala Lumpur,11,5190
+W.P. Kuala Lumpur,12,5380
+W.P. Kuala Lumpur,13,5553
+W.P. Kuala Lumpur,14,5682
+W.P. Kuala Lumpur,15,5810
+W.P. Kuala Lumpur,16,5919
+W.P. Kuala Lumpur,17,6347
+W.P. Kuala Lumpur,18,6498
+W.P. Kuala Lumpur,19,6630
+W.P. Kuala Lumpur,20,6708
+W.P. Kuala Lumpur,21,6778
+W.P. Kuala Lumpur,22,6858
+W.P. Kuala Lumpur,23,6947
+W.P. Kuala Lumpur,24,7006
+W.P. Kuala Lumpur,25,7458
+W.P. Kuala Lumpur,26,7580
+W.P. Kuala Lumpur,27,7678
+W.P. Kuala Lumpur,28,7752
+W.P. Kuala Lumpur,29,7826
+W.P. Kuala Lumpur,30,7909
+W.P. Kuala Lumpur,31,8001
+W.P. Kuala Lumpur,32,8488
+W.P. Kuala Lumpur,33,8642
+W.P. Kuala Lumpur,34,8781
+W.P. Kuala Lumpur,35,8896
+W.P. Kuala Lumpur,36,9042
+W.P. Kuala Lumpur,37,9174
+W.P. Kuala Lumpur,38,9280
+W.P. Kuala Lumpur,39,9396
+W.P. Kuala Lumpur,40,9540
+W.P. Kuala Lumpur,41,9689
+W.P. Kuala Lumpur,42,9807
+W.P. Kuala Lumpur,43,9948
+W.P. Kuala Lumpur,44,10076
+W.P. Kuala Lumpur,45,10188
+W.P. Kuala Lumpur,46,10281
+W.P. Kuala Lumpur,47,10419
+W.P. Kuala Lumpur,48,10517
+W.P. Kuala Lumpur,49,10634
+W.P. Kuala Lumpur,50,10742
+W.P. Kuala Lumpur,51,10861
+W.P. Kuala Lumpur,52,10993
+W.P. Kuala Lumpur,53,11127
+W.P. Kuala Lumpur,54,11305
+W.P. Kuala Lumpur,55,11467
+W.P. Kuala Lumpur,56,11623
+W.P. Kuala Lumpur,57,11838
+W.P. Kuala Lumpur,58,11953
+W.P. Kuala Lumpur,59,12112
+W.P. Kuala Lumpur,60,12215
+W.P. Kuala Lumpur,61,12347
+W.P. Kuala Lumpur,62,12477
+W.P. Kuala Lumpur,63,12601
+W.P. Kuala Lumpur,64,12720
+W.P. Kuala Lumpur,65,12841
+W.P. Kuala Lumpur,66,13333
+W.P. Kuala Lumpur,67,13617
+W.P. Kuala Lumpur,68,13876
+W.P. Kuala Lumpur,69,14112
+W.P. Kuala Lumpur,70,14365
+W.P. Kuala Lumpur,71,14630
+W.P. Kuala Lumpur,72,14795
+W.P. Kuala Lumpur,73,15004
+W.P. Kuala Lumpur,74,15192
+W.P. Kuala Lumpur,75,15430
+W.P. Kuala Lumpur,76,15621
+W.P. Kuala Lumpur,77,15872
+W.P. Kuala Lumpur,78,16166
+W.P. Kuala Lumpur,79,16476
+W.P. Kuala Lumpur,80,16754
+W.P. Kuala Lumpur,81,17163
+W.P. Kuala Lumpur,82,17544
+W.P. Kuala Lumpur,83,17985
+W.P. Kuala Lumpur,84,18554
+W.P. Kuala Lumpur,85,19192
+W.P. Kuala Lumpur,86,19710
+W.P. Kuala Lumpur,87,20591
+W.P. Kuala Lumpur,88,21409
+W.P. Kuala Lumpur,89,22358
+W.P. Kuala Lumpur,90,23661
+W.P. Kuala Lumpur,91,24959
+W.P. Kuala Lumpur,92,25936
+W.P. Kuala Lumpur,93,27125
+W.P. Kuala Lumpur,94,28908
+W.P. Kuala Lumpur,95,30994
+W.P. Labuan,1,1470
+W.P. Labuan,2,1825
+W.P. Labuan,3,2015
+W.P. Labuan,4,2232
+W.P. Labuan,5,2459
+W.P. Labuan,6,2533
+W.P. Labuan,7,2657
+W.P. Labuan,8,2767
+W.P. Labuan,9,2981
+W.P. Labuan,10,3170
+W.P. Labuan,11,3350
+W.P. Labuan,12,3580
+W.P. Labuan,13,3634
+W.P. Labuan,14,3678
+W.P. Labuan,15,3857
+W.P. Labuan,16,3905
+W.P. Labuan,17,3939
+W.P. Labuan,18,4053
+W.P. Labuan,19,4220
+W.P. Labuan,20,4397
+W.P. Labuan,21,4432
+W.P. Labuan,22,4552
+W.P. Labuan,23,4646
+W.P. Labuan,24,4763
+W.P. Labuan,25,4834
+W.P. Labuan,26,4871
+W.P. Labuan,27,4971
+W.P. Labuan,28,5046
+W.P. Labuan,29,5119
+W.P. Labuan,30,5224
+W.P. Labuan,31,5344
+W.P. Labuan,32,5412
+W.P. Labuan,33,5518
+W.P. Labuan,34,5587
+W.P. Labuan,35,5702
+W.P. Labuan,36,5811
+W.P. Labuan,37,5984
+W.P. Labuan,38,6102
+W.P. Labuan,39,6171
+W.P. Labuan,40,6295
+W.P. Labuan,41,6358
+W.P. Labuan,42,6503
+W.P. Labuan,43,6551
+W.P. Labuan,44,6728
+W.P. Labuan,45,6782
+W.P. Labuan,46,7005
+W.P. Labuan,47,7218
+W.P. Labuan,48,7276
+W.P. Labuan,49,7318
+W.P. Labuan,50,7339
+W.P. Labuan,51,7413
+W.P. Labuan,52,7514
+W.P. Labuan,53,7565
+W.P. Labuan,54,7656
+W.P. Labuan,55,7683
+W.P. Labuan,56,7795
+W.P. Labuan,57,7856
+W.P. Labuan,58,7901
+W.P. Labuan,59,7943
+W.P. Labuan,60,8012
+W.P. Labuan,61,8136
+W.P. Labuan,62,8493
+W.P. Labuan,63,8790
+W.P. Labuan,64,8898
+W.P. Labuan,65,9065
+W.P. Labuan,66,9236
+W.P. Labuan,67,9472
+W.P. Labuan,68,9552
+W.P. Labuan,69,9578
+W.P. Labuan,70,9747
+W.P. Labuan,71,9916
+W.P. Labuan,72,10115
+W.P. Labuan,73,10374
+W.P. Labuan,74,10642
+W.P. Labuan,75,10720
+W.P. Labuan,76,10857
+W.P. Labuan,77,10990
+W.P. Labuan,78,11280
+W.P. Labuan,79,11436
+W.P. Labuan,80,11595
+W.P. Labuan,81,11860
+W.P. Labuan,82,11912
+W.P. Labuan,83,12049
+W.P. Labuan,84,12375
+W.P. Labuan,85,13133
+W.P. Labuan,86,13396
+W.P. Labuan,87,13577
+W.P. Labuan,88,13995
+W.P. Labuan,89,14372
+W.P. Labuan,90,14603
+W.P. Labuan,91,15028
+W.P. Labuan,92,15774
+W.P. Labuan,93,16460
+W.P. Labuan,94,17115
+W.P. Labuan,95,17815
+W.P. Putrajaya,1,3654
+W.P. Putrajaya,2,4119
+W.P. Putrajaya,3,4304
+W.P. Putrajaya,4,4482
+W.P. Putrajaya,5,4609
+W.P. Putrajaya,6,4828
+W.P. Putrajaya,7,4880
+W.P. Putrajaya,8,5019
+W.P. Putrajaya,9,5144
+W.P. Putrajaya,10,5218
+W.P. Putrajaya,11,5300
+W.P. Putrajaya,12,5526
+W.P. Putrajaya,13,5798
+W.P. Putrajaya,14,5838
+W.P. Putrajaya,15,5934
+W.P. Putrajaya,16,6092
+W.P. Putrajaya,17,6426
+W.P. Putrajaya,18,6546
+W.P. Putrajaya,19,6704
+W.P. Putrajaya,20,6776
+W.P. Putrajaya,21,6900
+W.P. Putrajaya,22,7019
+W.P. Putrajaya,23,7249
+W.P. Putrajaya,24,7428
+W.P. Putrajaya,25,7579
+W.P. Putrajaya,26,7759
+W.P. Putrajaya,27,7948
+W.P. Putrajaya,28,8052
+W.P. Putrajaya,29,8282
+W.P. Putrajaya,30,8421
+W.P. Putrajaya,31,8679
+W.P. Putrajaya,32,8802
+W.P. Putrajaya,33,8877
+W.P. Putrajaya,34,8967
+W.P. Putrajaya,35,9033
+W.P. Putrajaya,36,9120
+W.P. Putrajaya,37,9244
+W.P. Putrajaya,38,9365
+W.P. Putrajaya,39,9461
+W.P. Putrajaya,40,9548
+W.P. Putrajaya,41,9685
+W.P. Putrajaya,42,9819
+W.P. Putrajaya,43,10006
+W.P. Putrajaya,44,10167
+W.P. Putrajaya,45,10345
+W.P. Putrajaya,46,10490
+W.P. Putrajaya,47,10575
+W.P. Putrajaya,48,10628
+W.P. Putrajaya,49,10659
+W.P. Putrajaya,50,10754
+W.P. Putrajaya,51,10866
+W.P. Putrajaya,52,10993
+W.P. Putrajaya,53,11463
+W.P. Putrajaya,54,11661
+W.P. Putrajaya,55,11723
+W.P. Putrajaya,56,11942
+W.P. Putrajaya,57,12079
+W.P. Putrajaya,58,12828
+W.P. Putrajaya,59,13587
+W.P. Putrajaya,60,13767
+W.P. Putrajaya,61,13936
+W.P. Putrajaya,62,14382
+W.P. Putrajaya,63,14933
+W.P. Putrajaya,64,15116
+W.P. Putrajaya,65,15291
+W.P. Putrajaya,66,15533
+W.P. Putrajaya,67,15791
+W.P. Putrajaya,68,16175
+W.P. Putrajaya,69,16527
+W.P. Putrajaya,70,16987
+W.P. Putrajaya,71,17324
+W.P. Putrajaya,72,17819
+W.P. Putrajaya,73,18190
+W.P. Putrajaya,74,18300
+W.P. Putrajaya,75,18350
+W.P. Putrajaya,76,18430
+W.P. Putrajaya,77,18491
+W.P. Putrajaya,78,18566
+W.P. Putrajaya,79,18673
+W.P. Putrajaya,80,18974
+W.P. Putrajaya,81,19179
+W.P. Putrajaya,82,20042
+W.P. Putrajaya,83,20510
+W.P. Putrajaya,84,20902
+W.P. Putrajaya,85,21243
+W.P. Putrajaya,86,21853
+W.P. Putrajaya,87,22837
+W.P. Putrajaya,88,23273
+W.P. Putrajaya,89,24138
+W.P. Putrajaya,90,24489
+W.P. Putrajaya,91,25230
+W.P. Putrajaya,92,26067
+W.P. Putrajaya,93,26897
+W.P. Putrajaya,94,27532
+W.P. Putrajaya,95,29290

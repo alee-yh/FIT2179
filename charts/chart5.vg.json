@@ -1,0 +1,447 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Does Earning More Make Malaysians Happier?",
+        "subtitle": "Median household income vs. happiness index across 16 states, 2024",
+        "subtitleFontStyle": "italic",
+        "fontSize": 16,
+        "subtitleFontSize": 12,
+        "anchor": "start",
+        "color": "#1a1209",
+        "subtitleColor": "#5a4a2e"
+    },
+    "width": 600, 
+    "height": 300,
+    "data": {
+        "url": "data/scatter_data.csv"
+    },
+    "layer": [
+        {
+            "transform": [
+                {
+                    "regression": "happiness",
+                    "on": "income",
+                    "extent": [3500, 11500]
+                }
+            ],
+            "mark": {
+                "type": "line",
+                "color": "#c8860a",
+                "strokeWidth": 2,
+                "strokeDash": [6, 3],
+                "opacity": 0.7
+            },
+            "encoding": {
+                "x": {
+                    "field": "income",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "happiness",
+                    "type": "quantitative"
+                }
+            }
+        },
+        {
+            "mark": {
+                "type": "point",
+                "filled": true,
+                "color": "#c8860a",
+                "size": 90,
+                "opacity": 0.40,
+                "stroke": "#ffffff",
+                "strokeWidth": 1.2
+            },
+            "encoding": {
+                "x": {
+                    "field": "income",
+                    "type": "quantitative",
+                    "title": "Median Household Income (RM)",
+                    "scale": {
+                        "domain": [3500, 11500]
+                    },
+                    "axis": {
+                        "tickCount": 6,
+                        "format": ",.0f",
+                        "labelFontSize": 11,
+                        "titleFontSize": 13,
+                        "titleColor": "#1a1209",
+                        "gridColor": "#ede8df",
+                        "gridOpacity": 0.8
+                    }
+                },
+                "y": {
+                    "field": "happiness",
+                    "type": "quantitative",
+                    "title": "Happiness Index",
+                    "scale": {
+                        "domain": [6.8, 8.8]
+                    },
+                    "axis": {
+                        "tickCount": 5,
+                        "labelFontSize": 11,
+                        "titleFontSize": 13,
+                        "titleColor": "#1a1209",
+                        "gridColor": "#ede8df",
+                        "gridOpacity": 0.8
+                    }
+                },
+                "tooltip": [
+                    {
+                        "field": "state",
+                        "type": "nominal",
+                        "title": "State"
+                    },
+                    {
+                        "field": "income",
+                        "type": "quantitative",
+                        "title": "Median Income (RM)",
+                        "format": ",.0f"
+                    },
+                    {
+                        "field": "happiness",
+                        "type": "quantitative",
+                        "title": "Happiness Index (0-10)",
+                        "format": ".2f"
+                    }
+                ]
+            }
+        },
+        {
+            "data": {
+                "values": [
+                    {
+                        "income": 6592,
+                        "happiness": 8.64
+                    }
+                ]
+            },
+            "layer": [
+                {
+                    "mark": {
+                        "type": "rule",
+                        "color": "#8a7558",
+                        "strokeWidth": 0.8
+                    },
+                    "encoding": {
+                        "x": {
+                            "datum": 6592,
+                            "type": "quantitative"
+                        },
+                        "y": {
+                            "datum": 8.64,
+                            "type": "quantitative"
+                        },
+                        "x2": {
+                            "datum": 5800
+                        },
+                        "y2": {
+                            "datum": 8.78
+                        }
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "fontSize": 11,
+                        "fontWeight": "bold",
+                        "color": "#1a1209",
+                        "align": "right",
+                        "dx": -2,
+                        "dy": -4
+                    },
+                    "encoding": {
+                        "x": {
+                            "datum": 5800,
+                            "type": "quantitative"
+                        },
+                        "y": {
+                            "datum": 8.78,
+                            "type": "quantitative"
+                        },
+                        "text": {
+                            "value": "Terengganu"
+                        }
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "fontSize": 9,
+                        "fontStyle": "italic",
+                        "color": "#8a7558",
+                        "align": "right",
+                        "dx": -2,
+                        "dy": 8
+                    },
+                    "encoding": {
+                        "x": {
+                            "datum": 5800,
+                            "type": "quantitative"
+                        },
+                        "y": {
+                            "datum": 8.78,
+                            "type": "quantitative"
+                        },
+                        "text": {
+                            "value": "Happiest state"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "data": {
+                "values": [
+                    {
+                        "income": 7339,
+                        "happiness": 7
+                    }
+                ]
+            },
+            "layer": [
+                {
+                    "mark": {
+                        "type": "rule",
+                        "color": "#8a7558",
+                        "strokeWidth": 0.8
+                    },
+                    "encoding": {
+                        "x": {
+                            "datum": 7339,
+                            "type": "quantitative"
+                        },
+                        "y": {
+                            "datum": 7,
+                            "type": "quantitative"
+                        },
+                        "x2": {
+                            "datum": 7339
+                        },
+                        "y2": {
+                            "datum": 6.75
+                        }                        
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "fontSize": 11,
+                        "fontWeight": "bold",
+                        "color": "#1a1209",
+                        "align": "center",
+                        "dy": -4
+                    },
+                    "encoding": {
+                        "x": {
+                            "datum": 7339,
+                            "type": "quantitative"
+                        },
+                        "y": {
+                            "datum": 6.50,
+                            "type": "quantitative"
+                        },
+                        "text": {
+                            "value": "W.P. Labuan"
+                        }
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "fontSize": 9,
+                        "fontStyle": "italic",
+                        "color": "#8a7558",
+                        "align": "center",
+                        "dy": 8
+                    },
+                    "encoding": {
+                        "x": {
+                            "datum": 7339,
+                            "type": "quantitative"
+                        },
+                        "y": {
+                            "datum": 6.55,
+                            "type": "quantitative"
+                        },
+                        "text": {
+                            "value": "Least happy"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "data": {
+                "values": [
+                    {
+                        "income": 10754,
+                        "happiness": 7.55
+                    }
+                ]
+            },
+            "layer": [
+                {
+                    "mark": {
+                        "type": "rule",
+                        "color": "#8a7558",
+                        "strokeWidth": 0.8
+                    },
+                    "encoding": {
+                        "x": {
+                            "datum": 10754,
+                            "type": "quantitative"
+                        },
+                        "y": {
+                            "datum": 7.55,
+                            "type": "quantitative"
+                        },
+                        "x2": {
+                            "datum": 11100
+                        },
+                        "y2": {
+                            "datum": 7.75
+                        }                        
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "fontSize": 11,
+                        "fontWeight": "bold",
+                        "color": "#1a1209",
+                        "align": "left",
+                        "dx": 2,
+                        "dy": -4
+                    },
+                    "encoding": {
+                        "x": {
+                            "datum": 11100,
+                            "type": "quantitative"
+                        },
+                        "y": {
+                            "datum": 7.75,
+                            "type": "quantitative"
+                        },
+                        "text": {
+                            "value": "W.P. Putrajaya"
+                        }
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "fontSize": 9,
+                        "fontStyle": "italic",
+                        "color": "#8a7558",
+                        "align": "left",
+                        "dx": 2,
+                        "dy": 8
+                    },
+                    "encoding": {
+                        "x": {
+                            "datum": 11100,
+                            "type": "quantitative"
+                        },
+                        "y": {
+                            "datum": 7.75,
+                            "type": "quantitative"
+                        },
+                        "text": {
+                            "value": "Highest income"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "data": {
+                "values": [
+                    {
+                        "income": 4043,
+                        "happiness": 7.24
+                    }
+                ]
+            },
+            "layer": [
+                {
+                    "mark": {
+                        "type": "rule",
+                        "color": "#8a7558",
+                        "strokeWidth": 0.8
+                    },
+                    "encoding": {
+                        "x": {
+                            "datum": 4043,
+                            "type": "quantitative"
+                        },
+                        "y": {
+                            "datum": 7.24,
+                            "type": "quantitative"
+                        },
+                        "x2": {
+                            "datum": 4500
+                        },
+                        "y2": {
+                            "datum": 6.8
+                        }                        
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "fontSize": 11,
+                        "fontWeight": "bold",
+                        "color": "#1a1209",
+                        "align": "left",
+                        "dx": 2,
+                        "dy": -4
+                    },
+                    "encoding": {
+                        "x": {
+                            "datum": 4500,
+                            "type": "quantitative"
+                        },
+                        "y": {
+                            "datum": 6.8,
+                            "type": "quantitative"
+                        },
+                        "text": {
+                            "value": "Kelantan"
+                        }
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "fontSize": 9,
+                        "fontStyle": "italic",
+                        "color": "#8a7558",
+                        "align": "left",
+                        "dx": 2,
+                        "dy": 8
+                    },
+                    "encoding": {
+                        "x": {
+                            "datum": 4500,
+                            "type": "quantitative"
+                        },
+                        "y": {
+                            "datum": 6.8,
+                            "type": "quantitative"
+                        },
+                        "text": {
+                            "value": "Lowest income"
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "config": {
+        "view": {
+            "stroke": "transparent"
+        },
+        "background": "#faf7f2"
+    }
+}
