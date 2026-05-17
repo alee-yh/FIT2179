@@ -1,0 +1,165 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Are Men or Women Happier Across Malaysian States?",
+        "subtitle": "Male vs. female happiness index by state, 2024. Lines connecting the two scores show direction and size of the gender gap.",
+        "subtitleFontStyle": "italic",
+        "fontSize": 16,
+        "subtitleFontSize": 12,
+        "anchor": "start",
+        "color": "#1a1209",
+        "subtitleColor": "#5a4a2e"
+    },
+    "width": 220,
+    "height": 420,
+    "data": {
+        "url": "data/happiness_by_gender.csv"
+    },
+    "transform": [
+        {
+            "fold": [
+                "male_happiness",
+                "female_happiness"
+            ],
+            "as": [
+                "gender",
+                "happiness"
+            ]
+        },
+        {
+            "calculate": "datum.gender == 'male_happiness' ? 'Male' : 'Female'",
+            "as": "gender_label"
+        }
+    ],
+    "layer": [
+        {
+            "mark": {
+                "type": "line",
+                "strokeWidth": 1.5,
+                "opacity": 0.5
+            },
+            "encoding": {
+                "x": {
+                    "field": "gender_label",
+                    "type": "nominal",
+                    "sort": ["Male", "Female"],
+                    "title": null,
+                    "axis": {
+                        "labelFontSize": 13,
+                        "labelFontWeight": "bold",
+                        "labelColor": "#1a1209",
+                        "domainColor": "#d4c5a9",
+                        "tickColor": "#d4c5a9",
+                        "labelAngle": 0
+                    }
+                },
+                "y": {
+                    "field": "happiness",
+                    "type": "quantitative",
+                    "title": "Happiness Index",
+                    "scale": {
+                        "domain": [6.8, 8.8]
+                    },
+                    "axis": {
+                        "tickCount": 5,
+                        "labelFontSize": 11,
+                        "titleFontSize": 13,
+                        "titleColor": "#1a1209",
+                        "gridColor": "#ede8df",
+                        "gridOpacity": 0.8
+                    }
+                },
+                "detail": {
+                    "field": "state",
+                    "type": "nominal"
+                },
+                "color": {
+                    "condition": {
+                        "test": "datum.female_happiness > datum.male_happiness",
+                        "value": "#c8860a"
+                    },
+                    "value": "#4a90b8"
+                }
+            }
+        },
+        {
+            "mark": {
+                "type": "point",
+                "filled": true,
+                "size": 50,
+                "opacity": 0.8
+            },
+            "encoding": {
+                "x": {
+                    "field": "gender_label",
+                    "type": "nominal",
+                    "sort": ["Male", "Female"]
+                },
+                "y": {
+                    "field": "happiness",
+                    "type": "quantitative"
+                },
+                "color": {
+                    "condition": {
+                        "test": "datum.female_happiness > datum.male_happiness",
+                        "value": "#c8860a"
+                    },
+                    "value": "#4a90b8"
+                },
+                "tooltip": [
+                    {
+                        "field": "state",
+                        "type": "nominal",
+                        "title": "State"
+                    },
+                    {
+                        "field": "gender_label",
+                        "type": "nominal",
+                        "title": "Gender"
+                    },
+                    {
+                        "field": "happiness",
+                        "type": "quantitative",
+                        "title": "Happiness Index",
+                        "format": ".2f"
+                    }
+                ]
+            }
+        },
+        {
+            "transform": [
+                {
+                    "filter": "datum.gender_label == 'Female'"
+                }
+            ],
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 10,
+                "fontSize": 10,
+                "color": "#1a1209"
+            },
+            "encoding": {
+                "x": {
+                    "field": "gender_label",
+                    "type": "nominal",
+                    "sort": ["Male", "Female"]
+                },
+                "y": {
+                    "field": "happiness",
+                    "type": "quantitative"
+                },
+                "text": {
+                    "field": "state",
+                    "type": "nominal"
+                }
+            }
+        }
+    ],
+    "config": {
+        "view": {
+            "stroke": "transparent"
+        },
+        "background": "#faf7f2"
+    }
+}

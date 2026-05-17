@@ -1,0 +1,122 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Does Ethinicity Shapes What Makes Malaysians Happy?",
+        "subtitle": "Happiness index scores across key life domains by ethnic group, 2024.",
+        "subtitleFontStyle": "italic",
+        "fontSize": 16,
+        "subtitleFontSize": 12,
+        "anchor": "start",
+        "color": "#1a1209",
+        "subtitleColor": "#5a4a2e"
+    },
+    "width": 320,
+    "height": 420,
+    "data": {
+        "url": "data/happiness_by_ethnicity.csv"
+    },
+    "mark": {
+        "type": "bar"
+    },
+    "encoding": {
+        "x": {
+            "field": "ethnicity",
+            "type": "nominal",
+            "sort": [
+                "Bumiputera",
+                "Chinese",
+                "Indians",
+                "Others"
+            ],
+            "title": "Ethnic Group",
+            "axis": {
+                "labelFontSize": 12,
+                "labelColor": "#1a1209",
+                "titleFontSize": 13,
+                "titleColor": "#1a1209",
+                "domainColor": "#d4c5a9",
+                "tickColor": "#d4c5a9"
+            }
+        },
+        "y": {
+            "field": "score",
+            "type": "quantitative",
+            "title": "Happiness Score (Stacked)",
+            "stack": "zero",
+            "axis": {
+                "labelFontSize": 11,
+                "titleFontSize": 13,
+                "titleColor": "#1a1209",
+                "gridColor": "#ede8df",
+                "gridOpacity": 0.8
+            }
+        },
+        "color": {
+            "field": "component",
+            "type": "nominal",
+            "sort": [
+                "Family",
+                "Income",
+                "Working Life",
+                "Emotional",
+                "Housing",
+                "Education"
+            ],
+            "scale": {
+                "domain": [
+                    "Family",
+                    "Income",
+                    "Working Life",
+                    "Emotional",
+                    "Housing",
+                    "Education"
+                ],
+                "range": [
+                    "#7a4e06",
+                    "#c8860a",
+                    "#e8b84b",
+                    "#f5d48a",
+                    "#a8c97a",
+                    "#5fa65f"
+                ]
+            },
+            "legend": {
+                "title": "Life Domain",
+                "orient": "right",
+                "titleFontSize": 12,
+                "labelFontSize": 11,
+                "titleColor": "#1a1209",
+                "labelColor": "#1a1209"
+            }
+        },
+        "order": {
+            "field": "score",
+            "type": "quantitative",
+            "sort": "descending"
+        },
+        "tooltip": [
+            {
+                "field": "ethnicity",
+                "type": "nominal",
+                "title": "Ethnic Group"
+            },
+            {
+                "field": "component",
+                "type": "nominal",
+                "title": "Domain"
+            },
+            {
+                "field": "score",
+                "type": "quantitative",
+                "title": "Happiness Score",
+                "format": ".2f"
+            }
+        ]
+    },
+    "config": {
+        "view": {
+            "stroke": "transparent"
+        },
+        "background": "#faf7f2"
+    }
+}
