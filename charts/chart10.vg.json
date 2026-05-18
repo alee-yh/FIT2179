@@ -1,0 +1,107 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "City Life vs. Village Life — Who is Happier?",
+        "subtitle": "Urban vs. rural happiness scores across 13 life domains.",
+        "subtitleFontStyle": "italic",
+        "fontSize": 16,
+        "subtitleFontSize": 12,
+        "anchor": "start",
+        "subtitleColor": "#5a4a2e",
+        "color": "#1a1209"
+    },
+    "width": 400,
+    "height": 420,
+    "data": {
+        "url": "data/happiness_urban_rural.csv"
+    },
+    "mark": {
+        "type": "bar",
+        "cornerRadiusEnd": 2
+    },
+    "encoding": {
+        "y": {
+            "field": "component",
+            "type": "nominal",
+            "sort": {
+                "field": "difference",
+                "order": "descending"
+            },
+            "title": null,
+            "axis": {
+                "labelFontSize": 12,
+                "labelColor": "#1a1209"
+            }
+        },
+        "x": {
+            "field": "score",
+            "type": "quantitative",
+            "title": "Happiness Score",
+            "scale": {
+                "domain": [6, 9.2],
+                "clamp": true
+            },
+            "axis": {
+                "tickCount": 5,
+                "labelFontSize": 11,
+                "titleFontSize": 13,
+                "titleColor": "#1a1209",
+                "gridColor": "#ede8df",
+                "gridOpacity": 0.8
+            }
+        },
+        "yOffset": {
+            "field": "strata",
+            "type": "nominal",
+            "sort": ["Urban", "Rural"]
+        },
+        "color": {
+            "field": "strata",
+            "type": "nominal",
+            "sort": ["Urban", "Rural"],
+            "scale": {
+                "domain": ["Urban", "Rural"],
+                "range": ["#c8860a", "#4a90b8"]
+            },
+            "legend": {
+                "title": "Strata",
+                "orient": "bottom",
+                "direction": "horizontal",
+                "titleFontSize": 12,
+                "labelFontSize": 11,
+                "titleColor": "#1a1209",
+                "labelColor": "#1a1209"
+            }
+        },
+        "tooltip": [
+            {
+                "field": "component",
+                "type": "nominal",
+                "title": "Domain"
+            },
+            {
+                "field": "strata",
+                "type": "nominal",
+                "title": "Strata"
+            },
+            {
+                "field": "score",
+                "type": "quantitative",
+                "title": "Happiness Score",
+                "format": ".2f"
+            },
+            {
+                "field": "difference",
+                "type": "quantitative",
+                "title": "Urban - Rural =",
+                "format": "+.2f"
+            }
+        ]
+    },
+    "config": {
+        "view": {
+            "stroke": "transparent"
+        },
+        "background": "#faf7f2"
+    }   
+}

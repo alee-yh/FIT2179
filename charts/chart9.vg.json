@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-        "text": "Does Ethinicity Shapes What Makes Malaysians Happy?",
+        "text": "What Makes Each Ethnic Group in Malaysia Happy?",
         "subtitle": "Happiness index scores across key life domains by ethnic group, 2024.",
         "subtitleFontStyle": "italic",
         "fontSize": 16,
@@ -32,6 +32,7 @@
             "axis": {
                 "labelFontSize": 12,
                 "labelColor": "#1a1209",
+                "labelAngle": 0,
                 "titleFontSize": 13,
                 "titleColor": "#1a1209",
                 "domainColor": "#d4c5a9",
@@ -88,11 +89,6 @@
                 "titleColor": "#1a1209",
                 "labelColor": "#1a1209"
             }
-        },
-        "order": {
-            "field": "score",
-            "type": "quantitative",
-            "sort": "descending"
         },
         "tooltip": [
             {

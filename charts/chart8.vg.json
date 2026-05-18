@@ -11,10 +11,58 @@
         "subtitleColor": "#5a4a2e"
     },
     "width": 220,
-    "height": 420,
+    "height": 460,
     "data": {
         "url": "data/happiness_by_gender.csv"
     },
+    "params": [
+        {
+            "name": "highlighted_state",
+            "value": "",
+            "bind": {
+                "input": "select",
+                "options": [
+                    "",
+                    "Johor",
+                    "Kedah",
+                    "Kelantan",
+                    "Melaka",
+                    "Negeri Sembilan",
+                    "Pahang",
+                    "Perak",
+                    "Perlis",
+                    "Pulau Pinang",
+                    "Sabah",
+                    "Sarawak",
+                    "Selangor",
+                    "Terengganu",
+                    "W.P. Kuala Lumpur",
+                    "W.P. Labuan",
+                    "W.P. Putrajaya"
+                ],
+                "labels": [
+                    "None",
+                    "Johor",
+                    "Kedah",
+                    "Kelantan",
+                    "Melaka",
+                    "Negeri Sembilan",
+                    "Pahang",
+                    "Perak",
+                    "Perlis",
+                    "Pulau Pinang",
+                    "Sabah",
+                    "Sarawak",
+                    "Selangor",
+                    "Terengganu",
+                    "W.P. Kuala Lumpur",
+                    "W.P. Labuan",
+                    "W.P. Putrajaya"
+                ],
+                "name": "Highlight state: "
+            }
+        }
+    ],
     "transform": [
         {
             "fold": [
@@ -34,9 +82,7 @@
     "layer": [
         {
             "mark": {
-                "type": "line",
-                "strokeWidth": 1.5,
-                "opacity": 0.5
+                "type": "line"
             },
             "encoding": {
                 "x": {
@@ -74,11 +120,35 @@
                     "type": "nominal"
                 },
                 "color": {
-                    "condition": {
-                        "test": "datum.female_happiness > datum.male_happiness",
-                        "value": "#c8860a"
-                    },
+                    "condition": [
+                        {
+                            "test": "highlighted_state != '' && datum.state == highlighted_state",
+                            "value": "#2d2d2d"
+                        },
+                        {
+                            "test": "highlighted_state != '' && datum.state != highlighted_state",
+                            "value": "#e0d9d0"
+                        },
+                        {
+                            "test": "highlighted_state == '' && datum.female_happiness > datum.male_happiness",
+                            "value": "#c8860a"
+                        }
+                    ],
                     "value": "#4a90b8"
+                },
+                "opacity": {
+                    "condition": {
+                        "test": "highlighted_state != '' && datum.state != highlighted_state",
+                        "value": 0.25
+                    },
+                    "value": 0.75
+                },
+                "strokeWidth": {
+                    "condition": {
+                        "test": "highlighted_state != '' && datum.state == highlighted_state",
+                        "value": 3
+                    },
+                    "value": 1.5
                 }
             }
         },
@@ -86,8 +156,7 @@
             "mark": {
                 "type": "point",
                 "filled": true,
-                "size": 50,
-                "opacity": 0.8
+                "size": 45
             },
             "encoding": {
                 "x": {
@@ -100,11 +169,28 @@
                     "type": "quantitative"
                 },
                 "color": {
-                    "condition": {
-                        "test": "datum.female_happiness > datum.male_happiness",
-                        "value": "#c8860a"
-                    },
+                    "condition": [
+                        {
+                            "test": "highlighted_state != '' && datum.state == highlighted_state",
+                            "value": "#2d2d2d"
+                        },
+                        {
+                            "test": "highlighted_state != '' && datum.state != highlighted_state",
+                            "value": "#e0d9d0"
+                        },
+                        {
+                            "test": "highlighted_state == '' && datum.female_happiness > datum.male_happiness",
+                            "value": "#c8860a"
+                        }
+                    ],
                     "value": "#4a90b8"
+                },
+                "opacity": {
+                    "condition": {
+                        "test": "highlighted_state != '' && datum.state != highlighted_state",
+                        "value": 0.25
+                    },
+                    "value": 1
                 },
                 "tooltip": [
                     {
@@ -130,14 +216,21 @@
             "transform": [
                 {
                     "filter": "datum.gender_label == 'Female'"
+                },
+                {
+                    "filter": "datum.state == 'Terengganu' || datum.state == 'W.P. Labuan' || datum.state == 'Perak' || datum.state == 'Sabah'"
+                },
+                {
+                    "filter": "highlighted_state == ''"
                 }
             ],
             "mark": {
                 "type": "text",
                 "align": "left",
-                "dx": 10,
                 "fontSize": 10,
-                "color": "#1a1209"
+                "fontWeight": "bold",
+                "color": "#1a1209",
+                "dx": 10
             },
             "encoding": {
                 "x": {
@@ -154,7 +247,40 @@
                     "type": "nominal"
                 }
             }
-        }
+        },
+        {
+            "transform": [
+                {
+                    "filter": "datum.gender_label == 'Female'"
+                },
+                {
+                    "filter": "highlighted_state != '' && datum.state == highlighted_state"
+                }
+            ],
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "fontSize": 11,
+                "fontWeight": "bold",
+                "color": "#2d2d2d",
+                "dx": 8
+            },
+            "encoding": {
+                "x": {
+                    "field": "gender_label",
+                    "type": "nominal",
+                    "sort": ["Male", "Female"]
+                },
+                "y": {
+                    "field": "happiness",
+                    "type": "quantitative"
+                },
+                "text": {
+                    "field": "state",
+                    "type": "nominal"
+                }
+            }
+        }       
     ],
     "config": {
         "view": {

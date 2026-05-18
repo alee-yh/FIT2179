@@ -1,0 +1,157 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Which States Grew 'Richer' Fastest?",
+        "subtitle": "Median household income at the 50th percentile by state.",
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 12,
+        "fontSize": 16,
+        "anchor": "start",
+        "subtitleColor": "#5a4a2e",
+        "color": "#1a1209"
+    },
+    "width": 560,
+    "height": 420,
+    "data": {
+        "url": "data/income_growth.csv"
+    },
+    "params": [
+        {
+            "name": "hovered_line",
+            "select": {
+                "type": "point",
+                "fields": [
+                    "state"
+                ],
+                "on": "pointerover",
+                "clear": "pointerout"
+            }
+        }
+    ],
+    "layer": [
+        {
+            "mark": {
+                "type": "line",
+                "point": false,
+                "strokeWidth": 1.8
+            },
+            "encoding": {
+                "x": {
+                    "field": "year",
+                    "type": "ordinal",
+                    "title": "Year",
+                    "axis": {
+                        "labelFontSize": 12,
+                        "titleFontSize": 13,
+                        "titleColor": "#1a1209",
+                        "gridColor": "#ede8df",
+                        "gridOpacity": 0.8,
+                        "domainColor": "#d4c5a9",
+                        "tickColor": "#d4c5a9"
+                    }
+                },
+                "y": {
+                    "field": "income",
+                    "type": "quantitative",
+                    "title": "Median Monthly Income (RM)",
+                    "scale": {
+                        "domain": [3000, 12000]
+                    },
+                    "axis": {
+                        "format": ",.0f",
+                        "tickCount": 6,
+                        "labelFontSize": 11,
+                        "titleFontSize": 13,
+                        "titleColor": "#1a1209",
+                        "gridColor": "#ede8df",
+                        "gridOpacity": 0.8
+                    }
+                },
+                "detail": {
+                    "field": "state",
+                    "type": "nominal"
+                },
+                "color": {
+                    "condition": {
+                        "param": "hovered_line",
+                        "empty": false,
+                        "value": "#c8860a"
+                    },
+                    "value": "#d4c9b8"
+                },
+                "strokeWidth": {
+                    "condition": {
+                        "param": "hovered_line",
+                        "empty": false,
+                        "value": 3
+                    },
+                    "value": 1.2
+                },
+                "opacity": {
+                    "condition": {
+                        "param": "hovered_line",
+                        "empty": true,
+                        "value": 0.85
+                    },
+                    "value": 0.3
+                },
+                "tooltip": [
+                    {
+                        "field": "state",
+                        "type": "nominal",
+                        "title": "State"
+                    },
+                    {
+                        "field": "year",
+                        "type": "ordinal",
+                        "title": "Year"
+                    },
+                    {
+                        "field": "income",
+                        "type": "quantitative",
+                        "title": "Median Income (RM)",
+                        "format": ",.0f"
+                    }
+                ]
+            }
+        },
+        {
+            "transform": [
+                {
+                    "filter": "datum.year == 2024"
+                },
+                {
+                    "filter": "datum.state == 'Selangor' || datum.state == 'W.P. Kuala Lumpur' || datum.state == 'Kelantan' || datum.state == 'W.P. Putrajaya'"
+                }
+            ],
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 6,
+                "fontSize": 10,
+                "fontWeight": "bold",
+                "color": "#1a1209"
+            },
+            "encoding": {
+                "x": {
+                    "field": "year",
+                    "type": "ordinal"
+                },
+                "y": {
+                    "field": "income",
+                    "type": "quantitative"
+                },
+                "text": {
+                    "field": "state",
+                    "type": "nominal"
+                }
+            }
+        }
+    ],
+    "config": {
+        "view": {
+            "stroke": "transparent"
+        },
+        "background": "#faf7f2"
+    }
+}

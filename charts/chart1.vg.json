@@ -15,7 +15,7 @@
   },
   "layer": [
     {
-        "mark": {"type": "rule", "strokeWidth": 1.5, "color": "#cccccc"},
+        "mark": {"type": "rule", "strokeWidth": 1.5, "color": "#1a1209"},
         "encoding": {
             "y": {"field": "component", "type": "nominal", "sort": "x"},
             "x": {"field": "score", "type": "quantitative"},
@@ -40,9 +40,9 @@
             "color":{
                 "condition":{
                     "test": "datum.score < 7.6",
-                    "value": "#e45756"
+                    "value": "#4a90b8"
                 },
-                "value": "#4c78a8"
+                "value": "#c8860a"
             },
             "tooltip": [
                 {"field": "component", "title": "Domain"},
@@ -54,7 +54,7 @@
         "mark":{
             "type": "rule",
             "strokeDash": [4, 4],
-            "color": "#333333",
+            "color": "#1a1209",
             "strokeWidth": 1.2
         },
         "encoding": {
@@ -64,16 +64,22 @@
     {
         "mark": {
             "type": "text",
-            "align":"left",
+            "align":"center",
             "dx": 4,
-            "dy": -108,
+            "dy": -179,
             "fontSize": 10,
-            "color": "#333333",
+            "color": "#1a1209",
             "text": "National Average: 7.6"
         },
         "encoding": {
             "x": {"datum": 7.6}
         }
     }
-  ]
+  ],
+  "config": {
+    "view": {
+        "stroke": "transparent"
+    },
+    "background": "#faf7f2"
+  }
 }
