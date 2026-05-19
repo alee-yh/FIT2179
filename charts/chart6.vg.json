@@ -1,14 +1,10 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-        "text": "How Satisfied Are Malaysians With Their Income?",
-        "subtitle": "Income satisfaction sub-score from the Malaysian Happiness Index by State, 2024. National Average: 6.40",
-        "subtitleFontStyle": "italic",
+        "text": "Income satisfaction sub-score from the Malaysian Happiness Index",
         "fontSize": 16,
-        "subtitleFontSize": 12,
         "anchor": "start",
-        "color": "#1a1209",
-        "subtitleColor": "#5a4a2e"       
+        "color": "#5a4a2e"       
     },
     "width": 500,
     "height": 420,
@@ -121,7 +117,6 @@
     "config": {
         "view": {
             "stroke": "transparent"
-        },
-        "background": "#faf7f2"
+        }
     }
 }

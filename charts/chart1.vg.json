@@ -1,14 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "How Happy Are Malaysians?",
-    "subtitle": "Malaysia Happiness Index scores across 13 life domains, 2024",
+    "text": "Malaysia Happiness Index (MHI) scores across 13 life domains",
     "fontSize": 16,
-    "subtitleFontSize": 12,
-    "anchor": "start"
+    "anchor": "start",
+    "color": "#5a4a2e"
   },
-  "width": 600,
-  "height": 350,
+  "width": 850,
+  "height": 450,
   "data": {
     "url": "data/happiness_national.csv",
     "format": {"type": "csv"}
@@ -79,7 +78,6 @@
   "config": {
     "view": {
         "stroke": "transparent"
-    },
-    "background": "#faf7f2"
+    }
   }
 }

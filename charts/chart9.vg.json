@@ -10,8 +10,8 @@
         "color": "#1a1209",
         "subtitleColor": "#5a4a2e"
     },
-    "width": 320,
-    "height": 420,
+    "width": 350,
+    "height": 509,
     "data": {
         "url": "data/happiness_by_ethnicity.csv"
     },
@@ -112,7 +112,6 @@
     "config": {
         "view": {
             "stroke": "transparent"
-        },
-        "background": "#faf7f2"
+        }
     }
 }

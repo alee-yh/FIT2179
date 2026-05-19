@@ -1,0 +1,78 @@
+age_group,component,score,age_order
+15-19,Emotional,7.28,0
+20-24,Emotional,7.13,1
+25-29,Emotional,7.10,2
+30-34,Emotional,7.06,3
+35-39,Emotional,7.17,4
+40-44,Emotional,7.10,5
+45-49,Emotional,7.13,6
+50-54,Emotional,7.09,7
+55-59,Emotional,7.01,8
+60-64,Emotional,7.01,9
+65+,Emotional,6.81,10
+15-19,Family,8.78,0
+20-24,Family,8.58,1
+25-29,Family,8.69,2
+30-34,Family,8.68,3
+35-39,Family,8.68,4
+40-44,Family,8.62,5
+45-49,Family,8.62,6
+50-54,Family,8.62,7
+55-59,Family,8.59,8
+60-64,Family,8.61,9
+65+,Family,8.51,10
+15-19,Health,8.05,0
+20-24,Health,7.87,1
+25-29,Health,7.83,2
+30-34,Health,7.88,3
+35-39,Health,7.79,4
+40-44,Health,7.79,5
+45-49,Health,7.76,6
+50-54,Health,7.72,7
+55-59,Health,7.73,8
+60-64,Health,7.67,9
+65+,Health,7.46,10
+15-19,Income,6.56,0
+20-24,Income,6.40,1
+25-29,Income,6.54,2
+30-34,Income,6.46,3
+35-39,Income,6.44,4
+40-44,Income,6.49,5
+45-49,Income,6.51,6
+50-54,Income,6.47,7
+55-59,Income,6.33,8
+60-64,Income,6.12,9
+65+,Income,5.86,10
+15-19,Time Use,8.25,0
+20-24,Time Use,7.77,1
+25-29,Time Use,7.70,2
+30-34,Time Use,7.65,3
+35-39,Time Use,7.59,4
+40-44,Time Use,7.67,5
+45-49,Time Use,7.68,6
+50-54,Time Use,7.81,7
+55-59,Time Use,7.97,8
+60-64,Time Use,8.20,9
+65+,Time Use,8.05,10
+15-19,Total,7.79,0
+20-24,Total,7.57,1
+25-29,Total,7.58,2
+30-34,Total,7.58,3
+35-39,Total,7.55,4
+40-44,Total,7.56,5
+45-49,Total,7.58,6
+50-54,Total,7.59,7
+55-59,Total,7.62,8
+60-64,Total,7.64,9
+65+,Total,7.54,10
+15-19,Working Life,7.58,0
+20-24,Working Life,7.49,1
+25-29,Working Life,7.62,2
+30-34,Working Life,7.53,3
+35-39,Working Life,7.56,4
+40-44,Working Life,7.58,5
+45-49,Working Life,7.66,6
+50-54,Working Life,7.65,7
+55-59,Working Life,7.67,8
+60-64,Working Life,7.65,9
+65+,Working Life,7.56,10

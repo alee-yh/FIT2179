@@ -1,0 +1,196 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Happiness index scores by age groups and life domain",
+        "fontSize": 16,
+        "anchor": "start",
+        "color": "#5a4a2e"
+    },
+    "width": 850,
+    "height": 450,
+    "data": {
+        "url": "data/happiness_by_age.csv"
+    },
+    "params": [
+        {
+            "name": "age_highlighted_component",
+            "value": "",
+            "bind": {
+                "input": "select",
+                "options": [
+                    "",
+                    "Total",
+                    "Family",
+                    "Income",
+                    "Health",
+                    "Emotional",
+                    "Time Use",
+                    "Working Life"
+                ],
+                "labels": [
+                    "None",
+                    "Total",
+                    "Family",
+                    "Income",
+                    "Health",
+                    "Emotional",
+                    "Time Use",
+                    "Working Life"
+                ],
+                "name": "Highlight domain: "
+            }
+        }
+    ],
+    "layer": [
+        {
+            "mark": {
+                "type": "line",
+                "point": false
+            },
+            "encoding": {
+                "x": {
+                    "field": "age_group",
+                    "type": "ordinal",
+                    "sort": {
+                        "field": "age_order",
+                        "order": "descending"
+                    },
+                    "title": "Age Group",
+                    "axis": {
+                        "labelAngle": -30,
+                        "labelFontSize": 11,
+                        "titleFontSize": 13,
+                        "titleColor": "#1a1209",
+                        "gridColor": "#ede8df",
+                        "gridOpacity": 0.8,
+                        "domainColor": "#d4c5a9"
+                    }
+                },
+                "y": {
+                    "field": "score",
+                    "type": "quantitative",
+                    "title": "Happiness Score",
+                    "scale": {
+                        "domain": [5.5, 9]
+                    },
+                    "axis": {
+                        "tickCount": 6,
+                        "labelFontSize": 11,
+                        "titleFontSize": 13,
+                        "titleColor": "#1a1209",
+                        "gridColor": "#ede8df",
+                        "gridOpacity": 0.8
+                    }
+                },
+                "detail": {
+                    "field": "component",
+                    "type": "nominal"
+                },
+                "color": {
+                    "condition": [
+                        {
+                            "test": "age_highlighted_component != '' && datum.component == age_highlighted_component",
+                            "value": "#c8860a"
+                        },
+                        {
+                            "test": "age_highlighted_component != '' && datum.component != age_highlighted_component",
+                            "value": "#e0d9d0"
+                        }
+                    ],
+                    "value": "#d4c9b8"
+                },
+                "strokeWidth": {
+                    "condition": {
+                        "test": "age_highlighted_component != '' && datum.component == age_highlighted_component",
+                        "value": 3
+                    },
+                    "value": 2
+                },
+                "opacity": {
+                    "condition": {
+                        "test": "age_highlighted_component != '' && datum.component != age_highlighted_component",
+                        "value": 0.2
+                    },
+                    "value": 0.8
+                }
+            }
+        },
+        {
+            "transform": [
+                {
+                    "filter": "datum.age_group == '65+'"
+                },
+                {
+                    "filter": "age_highlighted_component == ''"
+                }
+            ],
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 6,
+                "dy": 4,
+                "fontSize": 10,
+                "color": "#1a1209"
+            },
+            "encoding": {
+                "x": {
+                    "field": "age_group",
+                    "type": "ordinal",
+                    "sort": {
+                        "field": "age_order",
+                        "order": "ascending"
+                    }
+                },
+                "y": {
+                    "field": "score",
+                    "type": "quantitative"
+                },
+                "text": {
+                    "field": "component",
+                    "type": "nominal"
+                }
+            }
+        },
+        {
+            "transform": [
+                {
+                    "filter": "datum.age_group == '65+'"
+                },
+                {
+                    "filter": "age_highlighted_component != '' && datum.component == age_highlighted_component"
+                }
+            ],
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 6,
+                "fontSize": 11,
+                "fontWeight": "bold",
+                "color": "#c8860a"
+            },
+            "encoding": {
+                "x": {
+                    "field": "age_group",
+                    "type": "ordinal",
+                    "sort": {
+                        "field": "age_order",
+                        "order": "ascending"
+                    }
+                },
+                "y": {
+                    "field": "score",
+                    "type": "quantitative"
+                },
+                "text": {
+                    "field": "component",
+                    "type": "nominal"
+                }
+            }
+        }
+    ],
+    "config": {
+        "view": {
+            "stroke": "transparent"
+        }
+    }
+}

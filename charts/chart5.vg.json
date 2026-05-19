@@ -1,17 +1,13 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-        "text": "Does Earning More Make Malaysians Happier?",
-        "subtitle": "Median household income vs. happiness index across 16 states, 2024",
-        "subtitleFontStyle": "italic",
+        "text": "Median household income vs. happiness index",
         "fontSize": 16,
-        "subtitleFontSize": 12,
         "anchor": "start",
-        "color": "#1a1209",
-        "subtitleColor": "#5a4a2e"
+        "color": "#5a4a2e"
     },
-    "width": 600, 
-    "height": 300,
+    "width": 850, 
+    "height": 250,
     "data": {
         "url": "data/scatter_data.csv"
     },
@@ -219,7 +215,7 @@
                             "datum": 7339
                         },
                         "y2": {
-                            "datum": 6.75
+                            "datum": 6.5
                         }                        
                     }
                 },
@@ -230,7 +226,7 @@
                         "fontWeight": "bold",
                         "color": "#1a1209",
                         "align": "center",
-                        "dy": -4
+                        "dy": 5
                     },
                     "encoding": {
                         "x": {
@@ -253,7 +249,7 @@
                         "fontStyle": "italic",
                         "color": "#8a7558",
                         "align": "center",
-                        "dy": 8
+                        "dy": 20
                     },
                     "encoding": {
                         "x": {
@@ -312,7 +308,7 @@
                         "color": "#1a1209",
                         "align": "left",
                         "dx": 2,
-                        "dy": -4
+                        "dy": -10
                     },
                     "encoding": {
                         "x": {
@@ -336,7 +332,7 @@
                         "color": "#8a7558",
                         "align": "left",
                         "dx": 2,
-                        "dy": 8
+                        "dy": 2
                     },
                     "encoding": {
                         "x": {
@@ -441,7 +437,6 @@
     "config": {
         "view": {
             "stroke": "transparent"
-        },
-        "background": "#faf7f2"
+        }
     }
 }

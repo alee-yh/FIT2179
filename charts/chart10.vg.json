@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-        "text": "City Life vs. Village Life — Who is Happier?",
+        "text": "City Life vs. Village Life: Who is Happier?",
         "subtitle": "Urban vs. rural happiness scores across 13 life domains.",
         "subtitleFontStyle": "italic",
         "fontSize": 16,

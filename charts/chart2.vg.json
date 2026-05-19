@@ -1,14 +1,16 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-        "text": "Happiness Across Every Life Domain by State",
-        "subtitle": "Each cell shows a state's happiness score for that domain. Darker = higher score.",
-        "fontSize": 16,
+        "text": "Each cell shows a state's happiness score for that domain.",
+        "subtitle": "Darker = higher score.",
         "subtitleFontSize": 12,
-        "anchor": "start"
+        "subtitleFontStyle": "italic",
+        "fontSize": 16,
+        "anchor": "start",
+        "color": "#5a4a2e"
     },
-    "width": 500,
-    "height": 350,
+    "width": 850,
+    "height": 500,
     "data": {
         "url": "data/happiness_components.csv",
         "format": {"type": "csv"}
@@ -59,7 +61,6 @@
     "config": {
         "view": {
             "stroke": "transparent"
-        },
-        "background": "#faf7f2"
+        }
     }
 }

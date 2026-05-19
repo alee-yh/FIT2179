@@ -1,0 +1,217 @@
+:root {
+    --bg: #faf7f2;
+
+    --text-main: #1a1209;
+    --text-sub: #5a4a2e;
+
+    --happy-main: #c8860c;
+    --happy-dark: #8f6108;
+    --happy-light: #ecd7a4;
+
+    --income-main: #4a90b8;
+    --income-dark: #2f6584;
+    --income-light: #bfd7e6;
+
+    --border: #ddd4c5;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+
+    background: var(--bg);
+
+    color: var(--text-main);
+
+    font-family: 'Red Rose', sans-serif;
+
+    line-height: 1.7;
+}
+
+.container {
+
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+.hero {
+
+    min-height: 50vh;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 4rem 0 2rem0;
+}
+
+.hero h1 {
+
+    font-family: 'Diplomata', serif;
+
+    font-size: 2.46rem;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.03em;
+
+    max-width: 900px;
+
+    margin-bottom: 1rem;
+
+    color: var(--text-main);
+}
+
+.hero-subtitle {
+    
+    font-family: 'Red Rose', serif;
+
+    font-size: 1.4rem;
+
+    font-weight: 400;
+
+    max-width: 700px;
+
+    font-size: 1.3rem;
+
+    margin-top: 2rem;
+
+    color: var(--text-sub);
+}
+
+.section {
+
+    padding: 1rem 0;
+}
+
+.section h2 {
+
+    font-size: 3rem;
+
+    margin-bottom: 1rem;
+}
+
+.section-label {
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.12em;
+
+    color: var(--happy-main);
+
+    font-size: 1.2rem;
+
+    font-weight: 700;
+
+    margin-bottom: 0.5rem;
+}
+
+.section-text {
+
+    max-width: 750px;
+
+    color: var(--text-sub);
+
+    margin-bottom: 3rem;
+}
+
+.section-heading {
+    margin-bottom: 2.5rem;
+}
+
+.chart-container {
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 1.5rem;
+
+    margin-bottom: 4rem;
+
+    box-shadow: 
+        0 4px 20px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.chart-block {
+
+    margin-bottom: 4rem;
+}
+
+.highlight-happy {
+
+    color: var(--happy-main);
+
+    font-weight: 700;
+}
+
+.highlight-income {
+
+    color: var(--income-main);
+
+    font-weight: 700;
+}
+
+.two-column-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 2rem;
+
+    align-items: start;
+
+    margin-bottom: 4rem;
+
+}
+
+.column-chart {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.small-chart {
+
+    height: 100%;
+}
+
+.vega-embed {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+@media (max-width: 650px) {
+
+    .hero h1 {
+        
+        font-size: 3rem;
+    }
+    
+    .section h2 {
+
+        font-size: 2rem;
+    }
+
+    .two-column-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+}

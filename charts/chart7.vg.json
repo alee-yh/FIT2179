@@ -1,17 +1,17 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-        "text": "How is Income Distributed Within Each State?",
-        "subtitle": "Median household income by income percentile, 2024. Capped at the 95th percentile to exclude extreme outliers.",
+        "text": "Median household income by income percentile",
+        "subtitle": "Capped at the 95th percentile to exclude extreme outliers.",
         "subtitleFontStyle": "italic",
         "fontSize": 16,
         "subtitleFontSize": 12,
         "anchor": "start",
-        "color": "#1a1209",
-        "subtitleColor": "#5a4a2e"
+        "subtitleColor": "#1a1209",
+        "color": "#5a4a2e"
     },
-    "width": 600,
-    "height": 380,
+    "width": 900,
+    "height": 500,
     "data": {
         "url": "data/income_distribution.csv"
     },
@@ -218,7 +218,6 @@
     "config": {
         "view": {
             "stroke": "transparent"
-        },
-        "background": "#faf7f2"
+        }
     }
 }

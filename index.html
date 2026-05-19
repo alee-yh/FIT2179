@@ -1,69 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Income & Happiness in Malaysia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diplomata&family=Red+Rose:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
+
 <body>
 
-    <h1>Does Money Buy Happiness in Malaysia?</h1>
-    <div id="chart1"></div>
-    <div id="chart2"></div>
-    <div id="chart3"></div>
-    <div id="chart4"></div>
-    <div id="chart5"></div>
-    <div id="chart6"></div>
-    <div id="chart7"></div>
-    <div id="chart8"></div>
-    <div id="chart9"></div>
-    <div id="chart10"></div>
-    <div id="chart11"></div>
+    <section class="hero">
+        <div class="container hero-content">
+
+            <p class="eyebrow">Malaysia | 2024</p>
+
+            <h1>
+                Does Money Buy Happiness in Malaysia?
+            </h1>
+
+            <p class="hero-subtitle">
+                Exploring how income, geography and<br>
+                identity shape happiness across Malaysia.
+            </p>
+
+            <div class="hero-divider"></div>
+
+            <p class="hero-intro">
+                Malaysians today are earning more than before.<br> 
+                Yet happiness is not distributed equally across<br>
+                the nation. Some states report strong well-being<br> 
+                despite lower incomes, while wealthier regions do<br>
+                not always top the happiness rankings. This<br> 
+                visual story explores whether economic prosperity<br>
+                truly leads to a happier life.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="section warm-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="section-label">PART I</p>
+
+                <h2>
+                    How Happy Are Malaysians?
+                </h2>
+
+                <p class="section-description">
+                    Happiness in Malaysia extends beyond income alone.<br>
+                    The Malaysian Happiness Index (MHI) measures well-being<br>
+                    across multiple life domains, revealing how satisfaction<br>
+                    varies across states and communities.
+                </p>
+            </div>
+
+            <div class="chart-block large-chart">
+
+                <div class="chart-text">
+                    <h3>What Shapes Happiness in Malaysia?</h3>
+
+                    <p>
+                        Malaysians report different levels of happiness across 13<br>
+                        life domains. Some aspects of life score consistently high,<br>
+                        while others reveal areas of dissatisfaction.
+                    </p>
+                </div>
+
+                <div class="chart-container">
+                    <div id="chart1"></div>
+                </div>
+
+            </div>
+
+            <div class="chart-block split-layout">
+
+                <div class="chart-container">
+                    <div id="chart2"></div>
+                </div>
+
+                <div class="side-text">
+                    <h3>Not Every State Experiences Happiness the Same Way</h3>
+
+                    <p>
+                        Looking deeper into each life domain reveals<br>
+                        strong regional differences.States that perform<br>
+                        well in one domain may struggle in another.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="chart-block large-chart">
+
+                <div class="chart-text centred-text">
+                    <h3>Where are Malaysia's Happiest States?</h3>
+
+                    <p>
+                        Happiness is unevenly distributed across the country.<br>
+                        Geographic patterns reveal how social, economic, and<br> 
+                        cultural factors influence well-being.
+                    </p>
+                </div>
+
+                <div class="chart-container map-container">
+                    <div id="chart3"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+</section>
+
+<section class="section cool-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="section-label">PART II</p>
+
+            <h2>
+                Does More Money Make Malaysians Happier?
+            </h2>
+
+            <p class="section-description">
+                Household income strongly shapes quality of life.<br> 
+                However, higher earnings do not always translate<br>
+                into higher happiness levels.
+            </p>
+
+        </div>
+
+        <div class="chart-block large-chart">
+
+            <div class="chart-text">
+                <h3>Income and Happiness Don't Always Move Together</h3>
+
+                <p>
+                    Wealthier states generally report higher happiness, but<br> 
+                    the relationship is far from perfect. Some lower-income<br>
+                    states achieve suprisingly high well-being scores.
+                </p>
+            </div>
+
+            <div class="chart-container featured-chart">
+                <div id="chart5"></div>
+            </div>
+
+        </div>
+
+        <div class="chart-block split-layout reverse-layout">
+
+            <div class="side-text">
+                <h3>How Satisfied Are Malaysians With Their Income?</h3>
+
+                <p>
+                    Financial satisfaction contributes to happiness, but it<br> 
+                    is only part of a large picture involving social<br>
+                    relationships, health, and daily well-being.
+                </p>
+            </div>
+
+            <div class="chart-container">
+                <div id="chart6"></div>
+            </div>
+
+        </div>
+
+        <div class="chart-block large-chart">
+
+            <div class="chart-text centred-text">
+                <h3>How is Income Distributed Across Each State?</h3>
+
+                <p>
+                    Median income alone cannot fully capture inequality.<br> 
+                    Looking across percentiles reveals how income is<br> 
+                    distributed within each state.
+                </p>
+            </div>
+
+            <div class="chart-container">
+                <div id="chart7"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section warm-section final-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="section-label">PART III</p>
+
+            <h2>Happiness is About More Than Money</h2>
+
+            <p class="section-description">
+                Identity, lifestyle, and personal priorities all influence how 
+                Malaysians experience happiness.
+            </p>
+
+        </div>
+
+        <!--MULTI COLUMN ROW-->
+
+        <div class="two-column-grid">
+
+            <div class="column-chart">
+
+                <div class="chart-text">
+                    <h3>
+                        Do Men and Women Experience Happiness Differently?
+                    </h3>
+
+                    <p>
+                        Gender differences in happiness vary across states.<br>
+                        Lines connecting the two scores show direction and<br>
+                        size of gender gap.
+                    </p>
+                </div>
+
+
+                <div class="chart-container small-chart">
+                    <div id="chart8"></div>
+                </div>
+
+            </div>
+
+            <div class="column-chart">
+
+                <div class="chart-text">
+                    <h3>
+                        Different Communities Value Different Aspects of Life
+                    </h3>
+
+                    <p>
+                        Happiness is shaped differently across ethnic groups.
+                    </p>
+                </div>
+
+                <div class="chart-container small-chart">
+                    <div id="chart9"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="chart-block large-chart">
+
+            <div class="chart-text centred-text">
+
+                <h3>
+                    How Does Happiness Change Across Age?
+                </h3>
+
+                <p>
+                    Happiness evolves throughout life and across different priorities.
+                </p>
+            </div>
+
+            <div class="chart-container">
+                <div id="chart12"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="ending-section">
+
+    <div class="container ending-content">
+
+        <h2>
+            So, Can Money Buy Happiness?
+        </h2>
+
+        <p>
+            Income clearly improves comfort and opportunity.
+            Yet across Malaysia, happiness is also shaped by community, identity, 
+            relationships, health and family. Wealth matters, but it is not the whole story.
+        </p>
+
+        <div class="footer-meta">
+            <p>
+                Data Sources: Department of Statistics Malaysia
+            </p>
+        </div>
+
+    </div>
+
+</section>
 
     <script>
-        vegaEmbed('#chart1', 'charts/chart1.vg.json');
+        vegaEmbed('#chart1', 'charts/chart1.vg.json')
     </script>
 
     <script>
-        vegaEmbed('#chart2', 'charts/chart2.vg.json');
+        vegaEmbed('#chart2', 'charts/chart2.vg.json')
     </script>
 
     <script>
-        vegaEmbed('#chart3', 'charts/chart3.vg.json');
+        vegaEmbed('#chart3', 'charts/chart3.vg.json')
     </script>
 
     <script>
-        vegaEmbed('#chart4', 'charts/chart4.vg.json');
+        vegaEmbed('#chart5', 'charts/chart5.vg.json')
     </script>
 
     <script>
-        vegaEmbed('#chart5', 'charts/chart5.vg.json');
+        vegaEmbed('#chart6', 'charts/chart6.vg.json')
     </script>
 
     <script>
-        vegaEmbed('#chart6', 'charts/chart6.vg.json');
+        vegaEmbed('#chart7', 'charts/chart7.vg.json')
     </script>
 
     <script>
-        vegaEmbed('#chart7', 'charts/chart7.vg.json');
+        vegaEmbed('#chart8', 'charts/chart8.vg.json')
     </script>
 
     <script>
-        vegaEmbed('#chart8', 'charts/chart8.vg.json');
+        vegaEmbed('#chart9', 'charts/chart9.vg.json')
     </script>
 
     <script>
-        vegaEmbed('#chart9', 'charts/chart9.vg.json');
-    </script>
-
-    <script>
-        vegaEmbed('#chart10', 'charts/chart10.vg.json');
-    </script>
-
-    <script>
-        vegaEmbed('#chart11', 'charts/chart11.vg.json');
+        vegaEmbed('#chart12', 'charts/chart12.vg.json')
     </script>
 
 </body>

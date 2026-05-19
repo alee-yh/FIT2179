@@ -1,16 +1,14 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-        "text": "Are Men or Women Happier Across Malaysian States?",
-        "subtitle": "Male vs. female happiness index by state, 2024. Lines connecting the two scores show direction and size of the gender gap.",
-        "subtitleFontStyle": "italic",
+        "text": "Male vs. female happiness index by state",
         "fontSize": 16,
         "subtitleFontSize": 12,
         "anchor": "start",
         "color": "#1a1209",
         "subtitleColor": "#5a4a2e"
     },
-    "width": 220,
+    "width": 350,
     "height": 460,
     "data": {
         "url": "data/happiness_by_gender.csv"
@@ -285,7 +283,6 @@
     "config": {
         "view": {
             "stroke": "transparent"
-        },
-        "background": "#faf7f2"
+        }
     }
 }
