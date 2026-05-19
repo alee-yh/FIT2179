@@ -179,7 +179,7 @@ body {
 
     display: flex;
 
-    flex-direction: column;
+    flex-direction: column; 
 }
 
 .small-chart {
@@ -195,6 +195,21 @@ body {
 
     justify-content: center;
 
+    align-items: center;
+
+}
+
+.vega-embed > div {
+
+    margin: 0 auto;
+}
+
+.vega-embed canvas,
+.vega-embed svg {
+
+    display: block;
+
+    margin: auto;
 }
 
 @media (max-width: 650px) {
