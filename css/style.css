@@ -1,5 +1,5 @@
 :root {
-    --bg: #faf7f2;
+    --bg: #ededed;
 
     --text-main: #1a1209;
     --text-sub: #5a4a2e;
@@ -126,7 +126,7 @@ body {
 
     background: white;
 
-    border-radius: 20px;
+    border-radius: 5px;
 
     padding: 1.5rem;
 

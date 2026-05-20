@@ -129,7 +129,7 @@
                         },
                         {
                             "test": "highlighted_state == '' && datum.female_happiness > datum.male_happiness",
-                            "value": "#c8860a"
+                            "value": "#d5a6bd"
                         }
                     ],
                     "value": "#4a90b8"
@@ -178,7 +178,7 @@
                         },
                         {
                             "test": "highlighted_state == '' && datum.female_happiness > datum.male_happiness",
-                            "value": "#c8860a"
+                            "value": "#d5a6bd"
                         }
                     ],
                     "value": "#4a90b8"
