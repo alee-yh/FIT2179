@@ -6,8 +6,8 @@
         "anchor": "start",
         "color": "#5a4a2e"
     },
-    "width": 850,
-    "height": 450,
+    "width": 450,
+    "height": 820,
     "data": {
         "url": "data/happiness_by_age.csv"
     },
@@ -127,8 +127,8 @@
             "mark": {
                 "type": "text",
                 "align": "left",
-                "dx": 6,
-                "dy": 4,
+                "dx": 7,
+                "dy": 3,
                 "fontSize": 10,
                 "color": "#1a1209"
             },

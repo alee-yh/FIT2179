@@ -43,9 +43,9 @@
                 "type": "point",
                 "filled": true,
                 "color": "#c8860a",
-                "size": 90,
-                "opacity": 0.40,
-                "stroke": "#ffffff",
+                "size": 200,
+                "opacity": 0.25,
+                "stroke": "#7d7b7b",
                 "strokeWidth": 1.2
             },
             "encoding": {
