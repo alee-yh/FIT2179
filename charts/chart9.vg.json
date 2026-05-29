@@ -11,7 +11,7 @@
         "subtitleColor": "#5a4a2e"
     },
     "width": 350,
-    "height": 509,
+    "height": 510,
     "data": {
         "url": "data/happiness_by_ethnicity.csv"
     },
@@ -59,26 +59,26 @@
                 "Family",
                 "Income",
                 "Working Life",
-                "Emotional",
+                "Culture",
                 "Housing",
-                "Education"
+                "Religion"
             ],
             "scale": {
                 "domain": [
                     "Family",
                     "Income",
                     "Working Life",
-                    "Emotional",
+                    "Culture",
                     "Housing",
-                    "Education"
+                    "Religion"
                 ],
                 "range": [
-                    "#f5d48a",
+                    "#54a24b",
                     "#c77826",
-                    "#e8b84b",
+                    "#83bcb6",
                     "#e5c366",
                     "#ccba78",
-                    "#c8860a"
+                    "#d8b5a5"
                 ]
             },
             "legend": {

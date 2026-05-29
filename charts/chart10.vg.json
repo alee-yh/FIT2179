@@ -27,6 +27,9 @@
             "axis": {
                 "labelFontSize": 12,
                 "labelColor": "#1a1209"
+            },
+            "scale": {
+                "paddingInner": 0.3
             }
         },
         "x": {
@@ -49,7 +52,11 @@
         "yOffset": {
             "field": "strata",
             "type": "nominal",
-            "sort": ["Urban", "Rural"]
+            "sort": ["Urban", "Rural"],
+            "scale": {
+                "paddingInner": 0.1,
+                "paddingOuter": 0.1
+            }
         },
         "color": {
             "field": "strata",
@@ -57,7 +64,7 @@
             "sort": ["Urban", "Rural"],
             "scale": {
                 "domain": ["Urban", "Rural"],
-                "range": ["#c8860a", "#4a90b8"]
+                "range": ["#bebada", "#9d755d"]
             },
             "legend": {
                 "title": "Strata",

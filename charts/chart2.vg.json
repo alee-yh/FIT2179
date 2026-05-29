@@ -49,7 +49,7 @@
         "color":{
             "field":"score",
             "type": "quantitative",
-            "scale":{"scheme": "blues", "domain": [5, 10]},
+            "scale":{"scheme": "teals", "domain": [5, 10]},
             "title": "Score"
         },
         "tooltip": [

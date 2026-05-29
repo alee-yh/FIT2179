@@ -78,10 +78,10 @@
             ],
             "mark": {
                 "type": "area",
-                "color": "#c8860a",
+                "color": "#a3cce9",
                 "fillOpacity": 0.3,
                 "line": {
-                    "color": "#c8860a",
+                    "color": "#a3cce9",
                     "strokeWidth": 2
                 }
             },
@@ -144,10 +144,10 @@
             ],
             "mark": {
                 "type": "area",
-                "color": "#4a90b8",
+                "color": "#994f00",
                 "fillOpacity": 0.3,
                 "line": {
-                    "color": "#4a90b8",
+                    "color": "#994f00",
                     "strokeWidth": 2
                 }
             },

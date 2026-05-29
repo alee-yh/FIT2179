@@ -4,8 +4,6 @@
   "width": 800,
   "height": 500,
 
-  "background": "#c9e8f5",
-
   "title": {
     "text": "Malaysian Happiness Index (MHI) by state",
     "anchor": "start",

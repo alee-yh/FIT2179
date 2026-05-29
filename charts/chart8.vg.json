@@ -9,7 +9,7 @@
         "subtitleColor": "#5a4a2e"
     },
     "width": 350,
-    "height": 460,
+    "height": 487,
     "data": {
         "url": "data/happiness_by_gender.csv"
     },
@@ -154,7 +154,7 @@
             "mark": {
                 "type": "point",
                 "filled": true,
-                "size": 45
+                "size": 50
             },
             "encoding": {
                 "x": {

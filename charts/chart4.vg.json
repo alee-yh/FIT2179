@@ -186,14 +186,14 @@
                 "scale": {
                     "domain": [7, 8.7],
                     "range": [
-                        "#fde8c0",
-                        "#e0a030",
-                        "#7a4e06"
+                        "#fda55e",
+                        "#f06b18",
+                        "#b93d02"
                     ]
                 },
                 "legend": {
                     "title": "Happiness Index",
-                    "orient": "top-right",
+                    "orient": "left",
                     "gradientLength": 120,
                     "gradientThickness": 10,
                     "labelFontSize": 10,
