@@ -1,16 +1,12 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-        "text": "Which States Grew 'Richer' Fastest?",
-        "subtitle": "Median household income at the 50th percentile by state.",
-        "subtitleFontStyle": "italic",
-        "subtitleFontSize": 12,
+        "text": "Median household income at the 50th percentile by state",
         "fontSize": 16,
         "anchor": "start",
-        "subtitleColor": "#5a4a2e",
-        "color": "#1a1209"
+        "color": "#5a4a2e"
     },
-    "width": 560,
+    "width": 590,
     "height": 420,
     "data": {
         "url": "data/income_growth.csv"
@@ -94,7 +90,7 @@
                     "filter": "datum.year == 2024"
                 },
                 {
-                    "filter": "datum.state == 'Selangor' || datum.state == 'W.P. Kuala Lumpur' || datum.state == 'Kelantan' || datum.state == 'W.P. Putrajaya'"
+                    "filter": "datum.state == 'Selangor' || datum.state == 'W.P. Kuala Lumpur' || datum.state == 'Kelantan'"
                 }
             ],
             "mark": {
@@ -124,7 +120,6 @@
     "config": {
         "view": {
             "stroke": "transparent"
-        },
-        "background": "#faf7f2"
+        }
     }
 }

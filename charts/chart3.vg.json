@@ -4,7 +4,7 @@
   "width": 800,
   "height": 500,
 
-  "background": "#d9eaf7",
+  "background": "#c9e8f5",
 
   "title": {
     "text": "Malaysian Happiness Index (MHI) by state",
@@ -28,13 +28,13 @@
 
       "mark": {
         "type": "geoshape",
-        "fill": "#d9eaf7"
+        "fill": "#c9e8f5"
       }
     },
     {
         "data": {
             "graticule": {
-                "step": [3,3]
+                "step": [4,4]
             }
         },
         "mark": {

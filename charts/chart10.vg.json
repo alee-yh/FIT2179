@@ -1,17 +1,13 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-        "text": "City Life vs. Village Life: Who is Happier?",
-        "subtitle": "Urban vs. rural happiness scores across 13 life domains.",
-        "subtitleFontStyle": "italic",
+        "text": "Urban vs. rural happiness scores across 13 life domains",
         "fontSize": 16,
-        "subtitleFontSize": 12,
         "anchor": "start",
-        "subtitleColor": "#5a4a2e",
-        "color": "#1a1209"
+        "color": "#5a4a2e"
     },
-    "width": 400,
-    "height": 420,
+    "width": 700,
+    "height": 500,
     "data": {
         "url": "data/happiness_urban_rural.csv"
     },
@@ -101,7 +97,6 @@
     "config": {
         "view": {
             "stroke": "transparent"
-        },
-        "background": "#faf7f2"
+        }
     }   
 }

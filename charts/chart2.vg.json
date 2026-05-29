@@ -10,7 +10,7 @@
         "color": "#5a4a2e"
     },
     "width": 850,
-    "height": 500,
+    "height": 350,
     "data": {
         "url": "data/happiness_components.csv",
         "format": {"type": "csv"}

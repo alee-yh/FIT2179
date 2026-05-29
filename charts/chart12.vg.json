@@ -6,7 +6,7 @@
         "anchor": "start",
         "color": "#5a4a2e"
     },
-    "width": 450,
+    "width": 550,
     "height": 820,
     "data": {
         "url": "data/happiness_by_age.csv"

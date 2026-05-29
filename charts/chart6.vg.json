@@ -6,7 +6,7 @@
         "anchor": "start",
         "color": "#5a4a2e"       
     },
-    "width": 500,
+    "width": 750,
     "height": 420,
     "data": {
         "url": "data/income_satisfaction_by_state.csv"
@@ -50,10 +50,6 @@
                 },
                 "color": {
                     "condition": [
-                        {
-                            "test": "datum.state == 'Terengganu'",
-                            "value": "#c8860a"
-                        },
                         {
                             "test": "datum.state == 'W.P. Putrajaya'",
                             "value": "#4a90b8"

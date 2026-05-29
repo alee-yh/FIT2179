@@ -7,7 +7,7 @@
     "color": "#5a4a2e"
   },
   "width": 850,
-  "height": 450,
+  "height": 350,
   "data": {
     "url": "data/happiness_national.csv",
     "format": {"type": "csv"}
@@ -63,12 +63,14 @@
     {
         "mark": {
             "type": "text",
-            "align":"center",
+            "align":"left",
             "dx": 4,
             "dy": -179,
             "fontSize": 10,
             "color": "#1a1209",
-            "text": "National Average: 7.6"
+            "text": "National Average: 7.6",
+            "fontStyle": "italic",
+            "fontWeight":"lighter"
         },
         "encoding": {
             "x": {"datum": 7.6}
