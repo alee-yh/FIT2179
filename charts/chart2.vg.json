@@ -1,10 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-        "text": "Each cell shows a state's happiness score for that domain.",
-        "subtitle": "Darker = higher score.",
-        "subtitleFontSize": 12,
-        "subtitleFontStyle": "italic",
+        "text": "Each cell shows a state's happiness score for that domain",
         "fontSize": 16,
         "anchor": "start",
         "color": "#5a4a2e"

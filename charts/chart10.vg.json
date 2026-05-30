@@ -6,101 +6,99 @@
         "anchor": "start",
         "color": "#5a4a2e"
     },
-    "width": 700,
-    "height": 500,
+    "width": 400,
+    "height": 520,
     "data": {
         "url": "data/happiness_urban_rural.csv"
     },
-    "mark": {
-        "type": "bar",
-        "cornerRadiusEnd": 2
-    },
-    "encoding": {
-        "y": {
-            "field": "component",
-            "type": "nominal",
-            "sort": {
-                "field": "difference",
-                "order": "descending"
+    "layer": [
+        {
+            "mark": {
+                "type": "bar",
+                "cornerRadiusEnd": 2
             },
-            "title": null,
-            "axis": {
-                "labelFontSize": 12,
-                "labelColor": "#1a1209"
-            },
-            "scale": {
-                "paddingInner": 0.3
+            "encoding": {
+                "y": {
+                    "field": "y_label",
+                    "type": "nominal",
+                    "sort": {
+                        "field": "sort_order",
+                        "order": "ascending"
+                    },
+                    "title": null,
+                    "axis": {
+                        "labelFontSize": 10.5,
+                        "labelColor": "#1a1209",
+                        "domainColor": "#d4c5a9",
+                        "tickColor": "#d4c5a9"
+                    }
+                },
+                "x": {
+                    "field": "score",
+                    "type": "quantitative",
+                    "title": "Happiness Score",
+                    "scale": {
+                        "domain": [
+                            6,
+                            9.2
+                        ],
+                        "clamp": true
+                    },
+                    "axis": {
+                        "tickCount": 5,
+                        "labelFontSize": 11,
+                        "titleFontSize": 12,
+                        "titleColor": "#1a1209",
+                        "gridColor": "#ede8df",
+                        "gridOpacity": 0.8
+                    }
+                },
+                "color": {
+                    "field": "strata",
+                    "type": "nominal",
+                    "sort": ["Urban", "Rural"],
+                    "scale": {
+                        "domain": ["Urban", "Rural"],
+                        "range": ["#bebada", "#9d755d"]
+                    },
+                    "legend": {
+                        "title": "Strata",
+                        "orient": "bottom",
+                        "direction": "horizontal",
+                        "titleFontSize": 11,
+                        "labelFontSize": 11,
+                        "titleColor": "#1a1209",
+                        "labelColor": "#1a1209"
+                    }
+                },
+                "tooltip": [
+                    {
+                        "field": "component",
+                        "type": "nominal",
+                        "title": "Domain"
+                    },
+                    {
+                        "field": "strata",
+                        "type": "nominal",
+                        "title": "Strata"
+                    },
+                    {
+                        "field": "score",
+                        "type": "quantitative",
+                        "title": "Happiness Score",
+                        "format": ".2f"
+                    },
+                    {
+                        "field": "difference",
+                        "type": "quantitative",
+                        "title": "Urban - Rural",
+                        "format": "+.2f"
+                    }
+                ]
             }
-        },
-        "x": {
-            "field": "score",
-            "type": "quantitative",
-            "title": "Happiness Score",
-            "scale": {
-                "domain": [6, 9.2],
-                "clamp": true
-            },
-            "axis": {
-                "tickCount": 5,
-                "labelFontSize": 11,
-                "titleFontSize": 13,
-                "titleColor": "#1a1209",
-                "gridColor": "#ede8df",
-                "gridOpacity": 0.8
-            }
-        },
-        "yOffset": {
-            "field": "strata",
-            "type": "nominal",
-            "sort": ["Urban", "Rural"],
-            "scale": {
-                "paddingInner": 0.1,
-                "paddingOuter": 0.1
-            }
-        },
-        "color": {
-            "field": "strata",
-            "type": "nominal",
-            "sort": ["Urban", "Rural"],
-            "scale": {
-                "domain": ["Urban", "Rural"],
-                "range": ["#bebada", "#9d755d"]
-            },
-            "legend": {
-                "title": "Strata",
-                "orient": "bottom",
-                "direction": "horizontal",
-                "titleFontSize": 12,
-                "labelFontSize": 11,
-                "titleColor": "#1a1209",
-                "labelColor": "#1a1209"
-            }
-        },
-        "tooltip": [
-            {
-                "field": "component",
-                "type": "nominal",
-                "title": "Domain"
-            },
-            {
-                "field": "strata",
-                "type": "nominal",
-                "title": "Strata"
-            },
-            {
-                "field": "score",
-                "type": "quantitative",
-                "title": "Happiness Score",
-                "format": ".2f"
-            },
-            {
-                "field": "difference",
-                "type": "quantitative",
-                "title": "Urban - Rural =",
-                "format": "+.2f"
-            }
-        ]
-    },
+        }
+    ],
+
     "config": {
         "view": {
             "stroke": "transparent"

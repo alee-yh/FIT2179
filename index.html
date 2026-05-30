@@ -43,9 +43,28 @@
             </p>
             <div class="standfirst-quote">
                 <blockquote>
-                    <p>"The happiest state is not the richest"</p>
-                    <cite>Malaysia Happiness Index, 2024</cite>
+                    <p>"MHI 2024 highlights the enduring happiness of Malaysians, 
+                        showcasing their unwavering optimism, strong sense of community, 
+                        and collective resillience in the face of global challenges. "
+                    </p>
+                    <cite>Department of Statistics Malaysia</cite>
                 </blockquote>
+            </div>
+            <div class="standfirst-table">
+                <p class="table-heading">MHI Score Guide</p>
+                <table class="mhi-table">
+                    <thead>
+                        <tr><th>Score</th><th>Category</th></tr>
+                    </thead>
+                    <thbody>
+                        <tr><td>0.00 - 2.00</td><td>Very Unhappy</td></tr>
+                        <tr><td>2.01 - 4.00</td><td>Unhappy</td></tr>
+                        <tr><td>4.01 - 6.00</td><td>Moderately Happy</td></tr>
+                        <tr class="row-highlight"><td>6.01 - 8.00</td><td>Happy</td></tr>
+                        <tr><td>8.01 - 10.00</td><td>Very Happy</td></tr>
+                    </thbody>
+                </table>
+                <p class="table-note">Malaysia's national average in 2024 is 7.6, in the <em>Happy</em> range.</p>
             </div>
             <p class="standfirst-body">
                 This visualisation follows the data through 
@@ -102,8 +121,11 @@
                             <b>Terengganu</b> scores well 
                             across almost every domain. 
                             <b>W.P. Labuan</b> and <b>Pulau Pinang</b> 
-                            trail consistently, even in domains
+                            trail behind consistently, even in domains
                             unrelated to income.
+                        </p>
+                        <p class="annotation-note">
+                            Darker = Higher score.
                         </p>
                     </div>
                 </div>
@@ -144,8 +166,17 @@
                         <h3>Income and Happiness<br>Don't Always Align</h3>
                         <p>
                             Each dot is a state. The median split lines divide it into
-                            four quadrants. Terengganu sits firmly in the <em>poor but happy</em>
-                            corner. Selangor and the federal territories are rich, but not the happiest.
+                            four quadrants.
+                        </p>
+                        <p>
+                            <b>Terengganu</b> records a median household income <i>above</i> the national
+                            median while also achieving a happiness index <b>substantially higher</b> than 
+                            the national median.
+                        </p>
+                        <p>
+                            <em>In contrast</em>, <b>Selangor</b> and some <b>federal territories</b> exhibit considerably
+                            <i>higher</i> median household incomes but report happiness scores <b>below</b> the 
+                            national median.
                         </p>
                     </div>
                     <div class="chart-col wide-chart">
@@ -166,9 +197,11 @@
                         <h3>Satisfaction Doesn't<br>Follow Income</h3>
                         <p>
                             Terengganu scores the highest on income satisfaction 
-                            <b>despite</b> modest earnings.<br>
-                            W.P. Putrajaya, Malaysia's highest-income state, falls 
-                            below the national average of 6.40.
+                            <b>despite</b> modest earnings.
+                        </p>
+                        <p>
+                            W.P. Putrajaya, Malaysia's highest-income state, <b>falls 
+                            below</b> the national average of 6.40.
                         </p>
                         <p>
                             Expectations, not earnings, may drive how content people feel.
@@ -186,7 +219,7 @@
                             at the top of the income ladder.
                         </p>
                         <p class="annotation-note">
-                            Hover a line to<br>follow a single state
+                            Use dropdown to<br> highlight a single state.
                         </p>
                     </div>
                     <div class="chart-col wide-chart">
@@ -205,7 +238,7 @@
                             between a state's poorest and wealthiest households.
                         </p>
                         <p class="annotation-note">
-                            Compare any two states<br>using the two dropdowns
+                            Compare any two states<br>using the two dropdowns.
                         </p>
                     </div>
                     <div class="chart-col wide-chart">
@@ -220,12 +253,16 @@
                     <div class="prose-col">
                         <h3>Where Inequality is High, Happiness is Lower</h3>
                         <p>
-                            Circle size encodes the P90 - P10 income gap. 
-                            Colour encodes happiness. Klang Valley carries the 
-                            largest circles and some of the lowest happiness scores.
+                            Circle size reflects the magnitude of income disparity, 
+                            measured as the difference between the 90th and 10th income
+                            percentiles (P90 – P10). Whereas colour indicates happiness levels.
+                        </p>
+                        <p>
+                            The largest circles are concentrated in the <b>Klang Valley</b>, where 
+                            substantial income inequality coincides with below-average happiness.
                         </p>
                         <p class="annotation-note">
-                            Use the zoom slider<br>to separate overlapping circles
+                            Use the zoom slider<br>to separate overlapping circles.
                         </p>
                     </div>
                     <div class="chart-col wide-chart">
@@ -259,7 +296,7 @@
                             higher.
                         </p>
                         <p class="annotation-note">
-                            Select a state to highlight it
+                            Select a state to highlight it.
                         </p>
                         <div class="chart-card">
                             <div id="chart8"></div>
@@ -271,8 +308,10 @@
                         <h3>Ethnic Groups Share<br>Similar Totals</h3>
                         <p>
                             But, the domain breakdown differs. The <i>Others</i>
-                            group scores notably lower on Income and Culture. 
-                            All groups score high on Family and Religion.
+                            group scores notably lower on <b>Income</b> and <b>Culture</b>. 
+                        </p>
+                        <p>
+                            All groups score high on <b>Family</b> and <b>Religion</b>.
                         </p>
                         <div class="chart-card">
                             <div id="chart9"></div>
@@ -301,19 +340,24 @@
                         <p>
                             Overall happiness is almost identical: 7.61 urban vs. 7.56 rural.
                         </p>
+                        <p>
+                            Indicating a <b>good balance</b> of well-being levels across different strata.
+                        </p>
                     </div>
                 </div>
 
-                <!-- Chart 12 - Line chart -->
+                <!-- Chart 12 - Heatmap -->
                 <div class="chart-row full-width">
                     <div class="prose-col">
                         <h3>Happiness Shifts Across Age Groups</h3>
                         <p>
-                            Time Use satisfaction dips in middle age and recovers after 55.
-                            Income satisfaction falls steadily from 55 onward. 
+                            <b>Time Use</b> satisfaction <b>dips</b> but recovers after 55.
+                        </p>
+                        <p>
+                            <b>Income</b> satisfaction falls steadily from 55 onward. 
                         </p>
                         <p class="annotation-note">
-                            Select a domain to trace its arc
+                            Darker = Higher score.
                         </p>
                     </div>
                     <div class="chart-col wide-chart">
@@ -335,13 +379,16 @@
                 <p>
                     Income improves comfort and opportunity.
                     States with growing wages show modest well-being
-                    gains over time. But, the happiest state in 2024 is
+                    gains over time. 
+                </p>
+                <p>
+                    The happiest state in 2024 is
                     <b>not</b> the richest. The widest inequality gaps 
                     align with the lowest happiness scores.
                 </p>
                 <p>
                     Happiness in Malaysia is built from family, faith, 
-                    community, and time. Money supports these things, it
+                    community, and time. Money supports these things, but it
                     cannot replace them.
                 </p>
                 <div class="verdict-meta">

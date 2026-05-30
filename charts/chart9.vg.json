@@ -11,7 +11,7 @@
         "subtitleColor": "#5a4a2e"
     },
     "width": 350,
-    "height": 510,
+    "height": 483,
     "data": {
         "url": "data/happiness_by_ethnicity.csv"
     },

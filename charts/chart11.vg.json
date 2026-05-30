@@ -11,11 +11,59 @@
     "data": {
         "url": "data/income_growth.csv"
     },
+    "params": [
+        {
+            "name": "income_hovered_line",
+            "value": "",
+            "bind": {
+                "input": "select",
+                "options": [
+                    "",
+                    "Johor",
+                    "Kedah",
+                    "Kelantan",
+                    "Melaka",
+                    "Negeri Sembilan",
+                    "Pahang",
+                    "Perak",
+                    "Perlis",
+                    "Pulau Pinang",
+                    "Sabah",
+                    "Sarawak",
+                    "Selangor",
+                    "Terengganu",
+                    "W.P. Kuala Lumpur",
+                    "W.P. Labuan",
+                    "W.P. Putrajaya"
+                ],
+                "labels": [
+                    "All states",
+                    "Johor",
+                    "Kedah",
+                    "Kelantan",
+                    "Melaka",
+                    "Negeri Sembilan",
+                    "Pahang",
+                    "Perak",
+                    "Perlis",
+                    "Pulau Pinang",
+                    "Sabah",
+                    "Sarawak",
+                    "Selangor",
+                    "Terengganu",
+                    "W.P. Kuala Lumpur",
+                    "W.P. Labuan",
+                    "W.P. Putrajaya"
+                ],
+                "name": "Highlight state: "
+            }
+        }
+    ],
     "layer": [
         {
             "mark": {
                 "type": "line",
-                "point": false,
+                "point": true,
                 "strokeWidth": 1.8
             },
             "encoding": {
@@ -56,13 +104,69 @@
                     "type": "nominal"
                 },
                 "color": {
-                    "value": "#d4c9b8"
+                    "field": "state",
+                    "type": "nominal",
+                    "scale": {
+                        "domain": [
+                            "Johor",
+                            "Kedah",
+                            "Kelantan",
+                            "Melaka",
+                            "Negeri Sembilan",
+                            "Pahang",
+                            "Perak",
+                            "Perlis",
+                            "Pulau Pinang",
+                            "Sabah",
+                            "Sarawak",
+                            "Selangor",
+                            "Terengganu",
+                            "W.P. Kuala Lumpur",
+                            "W.P. Labuan",
+                            "W.P. Putrajaya"
+                        ],
+                        "range": [
+                            "#e69f00",
+                            "#56b4e9",
+                            "#009e73",
+                            "#f0e442",
+                            "#0072b2",
+                            "#cc79a7",
+                            "#332288",
+                            "#882255",
+                            "#aa4499",
+                            "#d55e00",
+                            "#cc6677",
+                            "#117733",
+                            "#44aa99",
+                            "#648fff",
+                            "#785ef0",
+                            "#dc267f"
+                        ]
+                    },
+                    "legend": {
+                        "title": "State",
+                        "orient": "right",
+                        "labelFontSize": 10,
+                        "titleFontSize": 11,
+                        "titleColor": "#1a1209",
+                        "labelColor": "#5a4a2e",
+                        "symbolSize": 60
+                    }
                 },
                 "strokeWidth": {
-                    "value": 1.5
+                    "condition": {
+                        "test": "income_hovered_line != '' && datum.state == income_hovered_line",
+                        "value": 3
+                    },
+                    "value": 1.4
                 },
                 "opacity": {
-                    "value": 0.7
+                    "condition": {
+                        "test": "income_hovered_line != '' && datum.state != income_hovered_line",
+                        "value": 0.08
+                    },
+                    "value": 0.85
                 },
                 "tooltip": [
                     {
@@ -90,14 +194,14 @@
                     "filter": "datum.year == 2024"
                 },
                 {
-                    "filter": "datum.state == 'Selangor' || datum.state == 'W.P. Kuala Lumpur' || datum.state == 'Kelantan'"
+                    "filter": "income_hovered_line != '' && datum.state == income_hovered_line"
                 }
             ],
             "mark": {
                 "type": "text",
                 "align": "left",
                 "dx": 6,
-                "fontSize": 10,
+                "fontSize": 11,
                 "fontWeight": "bold",
                 "color": "#1a1209"
             },

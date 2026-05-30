@@ -5,11 +5,10 @@
         "fontSize": 16,
         "subtitleFontSize": 12,
         "anchor": "start",
-        "color": "#1a1209",
-        "subtitleColor": "#5a4a2e"
+        "color": "#5a4a2e"
     },
     "width": 350,
-    "height": 487,
+    "height": 485,
     "data": {
         "url": "data/happiness_by_gender.csv"
     },

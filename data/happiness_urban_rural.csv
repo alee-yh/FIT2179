@@ -1,27 +1,27 @@
-component,difference,strata,score
-Family,0.11,Urban,8.67
-Housing,0.07,Urban,7.69
-Social,-0.42,Urban,7.44
-Health,0.06,Urban,7.81
-Communication,0.69,Urban,7.53
-Education,0.24,Urban,7.87
-Working Life,0.04,Urban,7.59
-Income,0.11,Urban,6.43
-Public Safety,0.03,Urban,7.52
-Time Use,-0.1,Urban,7.79
-Culture,-0.14,Urban,6.18
-Religion,-0.07,Urban,8.67
-Emotional,0.06,Urban,7.11
-Family,0.11,Rural,8.56
-Housing,0.07,Rural,7.62
-Social,-0.42,Rural,7.86
-Health,0.06,Rural,7.75
-Communication,0.69,Rural,6.84
-Education,0.24,Rural,7.63
-Working Life,0.04,Rural,7.55
-Income,0.11,Rural,6.32
-Public Safety,0.03,Rural,7.49
-Time Use,-0.1,Rural,7.89
-Culture,-0.14,Rural,6.32
-Religion,-0.07,Rural,8.74
-Emotional,0.06,Rural,7.05
+component,difference,strata,score,y_label,sort_order
+Communication,0.69,Urban,7.53,Communication - Urban,0
+Communication,0.69,Rural,6.84,Communication - Rural,1
+Culture,-0.14,Urban,6.18,Culture - Urban,2
+Culture,-0.14,Rural,6.32,Culture - Rural,3
+Education,0.24,Urban,7.87,Education - Urban,4
+Education,0.24,Rural,7.63,Education - Rural,5
+Emotional,0.06,Urban,7.11,Emotional - rban,6
+Emotional,0.06,Rural,7.05,Emotional - Rural,7
+Family,0.11,Urban,8.67,Family - Urban,8
+Family,0.11,Rural,8.56,Family - Rural,9
+Health,0.06,Urban,7.81,Health - Urban,10
+Health,0.06,Rural,7.75,Health - Rural,11
+Housing,0.07,Urban,7.69,Housing - Urban,12
+Housing,0.07,Rural,7.62,Housing - Rural,13
+Income,0.11,Urban,6.43,Income - Urban,14
+Income,0.11,Rural,6.32,Income - Rural,15
+Public Safety,0.03,Urban,7.52,Public Safety - Urban,16
+Public Safety,0.03,Rural,7.49,Public Safety - Rural,17
+Religion,-0.07,Urban,8.67,Religion - Urban,18
+Religion,-0.07,Rural,8.74,Religion - Rural,19
+Social,-0.42,Urban,7.44,Social Participation - Urban,20
+Social,-0.42,Rural,7.86,Social Participation - Rural,21
+Time Use,-0.1,Urban,7.79,Time Use - Urban,22
+Time Use,-0.1,Rural,7.89,Time Use - Rural,23
+Working Life,0.04,Urban,7.59,Working Life - Urban,24
+Working Life,0.04,Rural,7.55,Working Life - Rural,25

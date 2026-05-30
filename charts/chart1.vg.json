@@ -14,7 +14,7 @@
   },
   "layer": [
     {
-        "mark": {"type": "rule", "strokeWidth": 1.5, "color": "#1a1209"},
+        "mark": {"type": "rule", "strokeWidth": 1.5, "color": "#cdbea8"},
         "encoding": {
             "y": {"field": "component", "type": "nominal", "sort": "x"},
             "x": {"field": "score", "type": "quantitative"},
